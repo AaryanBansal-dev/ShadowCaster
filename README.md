@@ -257,6 +257,27 @@ To add features or tools:
 2. Implement builder in `modules/tool_builders.py`
 3. Update documentation
 
+## License
+
+This project is licensed under the **GNU Affero General Public License v3 (AGPL-3.0)**.
+
+### Why AGPL-3.0?
+
+The AGPL-3.0 license was chosen specifically to:
+- **Force source code publication** for anyone running modified ShadowCaster as a service
+- **Prevent closed-source commercialization** - if someone takes this project, closes it, and offers it as a hosted product, they must share their improvements
+- **Keep derived code open** - ensures that any modifications or enhancements remain available to the community
+- **Protect against SaaS exploitation** - prevents companies from offering ShadowCaster as a hosted service without contributing back
+
+### Key Requirements
+
+- **Source code must be made available** when distributing the software
+- **Network use clause**: If you run a modified version on a server, you must provide source code to users
+- **Copyleft protection**: Derivative works must also be licensed under AGPL-3.0
+- **Patent protection**: Contributors grant patent licenses to users
+
+See [LICENSE](LICENSE) for the full license text.
+
 ## Author
 
 Created as a cybersecurity tool for ethical hacking practice.
