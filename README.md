@@ -29,6 +29,9 @@ A comprehensive CLI/TUI application for building penetration testing commands sa
 
 ```bash
 # Clone or navigate to the project
+git clone https://github.com/AaryanBansal-dev/ShadowCaster.git
+
+# Navigate to the ShadowCaster directory
 cd ShadowCaster
 
 # Make scripts executable
@@ -280,7 +283,7 @@ See [LICENSE](LICENSE) for the full license text.
 
 ## Author
 
-Created as a cybersecurity tool for ethical hacking practice.
+Created by Aaryan Bansal also known as NotUnHackable
 
 ---
 
