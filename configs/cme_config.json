@@ -1,0 +1,95 @@
+{
+  "name": "CrackMapExec",
+  "description": "Swiss army knife for pentesting Windows/Active Directory environments",
+  "command": "cme",
+  "categories": {
+    "Protocol": {
+      "options": [
+        {
+          "flag": "smb",
+          "description": "SMB protocol"
+        },
+        {
+          "flag": "ssh",
+          "description": "SSH protocol"
+        },
+        {
+          "flag": "rdp",
+          "description": "RDP protocol"
+        },
+        {
+          "flag": "mssql",
+          "description": "MSSQL protocol"
+        }
+      ]
+    },
+    "Target": {
+      "options": [
+        {
+          "flag": "",
+          "description": "Target IP/CIDR",
+          "variable": true,
+          "prompt_text": "Enter target IP or CIDR range:"
+        }
+      ]
+    },
+    "Authentication": {
+      "options": [
+        {
+          "flag": "-u",
+          "description": "Username(s)",
+          "variable": true,
+          "prompt_text": "Enter username(s):"
+        },
+        {
+          "flag": "-p",
+          "description": "Password(s)",
+          "variable": true,
+          "prompt_text": "Enter password(s):"
+        },
+        {
+          "flag": "-H",
+          "description": "Hash (NTLM)",
+          "variable": true,
+          "prompt_text": "Enter NTLM hash:"
+        }
+      ]
+    },
+    "Modules": {
+      "options": [
+        {
+          "flag": "-M",
+          "description": "Module name (mimikatz, enum_shares, etc.)",
+          "variable": true,
+          "prompt_text": "Enter module name:"
+        }
+      ]
+    },
+    "Options": {
+      "options": [
+        {
+          "flag": "--local-auth",
+          "description": "Use local authentication"
+        },
+        {
+          "flag": "--no-brute",
+          "description": "Skip brute force attempts"
+        },
+        {
+          "flag": "-v",
+          "description": "Verbose output"
+        }
+      ]
+    }
+  },
+  "required": {
+    "protocol": {
+      "prompt": "Enter protocol (smb, ssh, rdp, mssql):",
+      "description": "Protocol to test"
+    },
+    "target": {
+      "prompt": "Enter target IP/CIDR:",
+      "description": "Target IP address or CIDR range"
+    }
+  }
+}

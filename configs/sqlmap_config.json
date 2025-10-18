@@ -1,0 +1,121 @@
+{
+  "name": "SQLMap",
+  "description": "Automatic SQL injection and database takeover tool",
+  "command": "sqlmap",
+  "categories": {
+    "Target": {
+      "options": [
+        {
+          "flag": "-u",
+          "description": "Target URL",
+          "variable": true,
+          "prompt_text": "Enter target URL:"
+        },
+        {
+          "flag": "-g",
+          "description": "Process Google dork results",
+          "variable": true,
+          "prompt_text": "Enter Google dork query:"
+        }
+      ]
+    },
+    "Injection": {
+      "options": [
+        {
+          "flag": "-p",
+          "description": "Parameter to test",
+          "variable": true,
+          "prompt_text": "Enter parameter name (e.g., id):"
+        },
+        {
+          "flag": "--data",
+          "description": "POST data string",
+          "variable": true,
+          "prompt_text": "Enter POST data:"
+        },
+        {
+          "flag": "--cookie",
+          "description": "HTTP cookie header value",
+          "variable": true,
+          "prompt_text": "Enter cookie:"
+        }
+      ]
+    },
+    "Detection": {
+      "options": [
+        {
+          "flag": "--technique",
+          "description": "SQL injection techniques to use",
+          "variable": true,
+          "prompt_text": "Enter technique (B=Boolean, E=Error, U=Union, S=Stacked, T=Time, default=BEUSTC):"
+        },
+        {
+          "flag": "--level",
+          "description": "Level of tests (1-5)",
+          "variable": true,
+          "prompt_text": "Enter test level (1-5, default 1):"
+        },
+        {
+          "flag": "--risk",
+          "description": "Risk of tests (1-3)",
+          "variable": true,
+          "prompt_text": "Enter risk level (1-3, default 1):"
+        }
+      ]
+    },
+    "Enumeration": {
+      "options": [
+        {
+          "flag": "--dbs",
+          "description": "Enumerate DBMS databases"
+        },
+        {
+          "flag": "--tables",
+          "description": "Enumerate DBMS database tables"
+        },
+        {
+          "flag": "--columns",
+          "description": "Enumerate DBMS database columns"
+        },
+        {
+          "flag": "--dump",
+          "description": "Dump DBMS database table entries"
+        },
+        {
+          "flag": "--all",
+          "description": "Retrieve everything"
+        }
+      ]
+    },
+    "Performance": {
+      "options": [
+        {
+          "flag": "--threads",
+          "description": "Number of threads",
+          "variable": true,
+          "prompt_text": "Enter number of threads (1-10, default 1):"
+        },
+        {
+          "flag": "-o",
+          "description": "Turn on all optimization switches"
+        }
+      ]
+    },
+    "Verbosity": {
+      "options": [
+        {
+          "flag": "-v",
+          "description": "Verbosity level",
+          "variable": true,
+          "prompt_text": "Enter verbosity (0-6, default 1):"
+        }
+      ]
+    }
+  },
+  "required": {
+    "url": {
+      "prompt": "Enter target URL:",
+      "description": "URL to test for SQL injection"
+    }
+  }
+}

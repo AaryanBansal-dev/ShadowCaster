@@ -1,0 +1,115 @@
+{
+  "name": "Gobuster",
+  "description": "Directory/DNS/VHOST enumeration tool",
+  "command": "gobuster",
+  "categories": {
+    "Mode": {
+      "options": [
+        {
+          "flag": "dir",
+          "description": "Directory brute-force"
+        },
+        {
+          "flag": "dns",
+          "description": "DNS subdomain enumeration"
+        },
+        {
+          "flag": "vhost",
+          "description": "Virtual host discovery"
+        }
+      ]
+    },
+    "Target": {
+      "options": [
+        {
+          "flag": "-u",
+          "description": "Base URL",
+          "variable": true,
+          "prompt_text": "Enter base URL (e.g., http://target.com):"
+        },
+        {
+          "flag": "-d",
+          "description": "Domain",
+          "variable": true,
+          "prompt_text": "Enter domain:"
+        }
+      ]
+    },
+    "Wordlist": {
+      "options": [
+        {
+          "flag": "-w",
+          "description": "Wordlist path",
+          "variable": true,
+          "prompt_text": "Enter path to wordlist:"
+        }
+      ]
+    },
+    "HTTP Options": {
+      "options": [
+        {
+          "flag": "-s",
+          "description": "Status codes to include",
+          "variable": true,
+          "prompt_text": "Enter status codes (e.g., 200,204,301,302):"
+        },
+        {
+          "flag": "-b",
+          "description": "Status codes to exclude",
+          "variable": true,
+          "prompt_text": "Enter status codes to exclude:"
+        },
+        {
+          "flag": "-H",
+          "description": "Custom header",
+          "variable": true,
+          "prompt_text": "Enter header (e.g., Authorization: Bearer token):"
+        }
+      ]
+    },
+    "Performance": {
+      "options": [
+        {
+          "flag": "-t",
+          "description": "Number of threads",
+          "variable": true,
+          "prompt_text": "Enter number of threads (default 10):"
+        },
+        {
+          "flag": "--delay",
+          "description": "Delay between requests",
+          "variable": true,
+          "prompt_text": "Enter delay in milliseconds:"
+        }
+      ]
+    },
+    "Output": {
+      "options": [
+        {
+          "flag": "-o",
+          "description": "Output file",
+          "variable": true,
+          "prompt_text": "Enter output filename:"
+        }
+      ]
+    },
+    "Additional": {
+      "options": [
+        {
+          "flag": "-v",
+          "description": "Verbose output"
+        },
+        {
+          "flag": "-k",
+          "description": "Skip SSL verification"
+        }
+      ]
+    }
+  },
+  "required": {
+    "mode": {
+      "prompt": "Enter mode (dir, dns, vhost):",
+      "description": "Gobuster mode"
+    }
+  }
+}

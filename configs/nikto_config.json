@@ -1,0 +1,93 @@
+{
+  "name": "Nikto",
+  "description": "Comprehensive web server scanner for vulnerabilities and misconfigurations",
+  "command": "nikto",
+  "categories": {
+    "Target": {
+      "options": [
+        {
+          "flag": "-h",
+          "description": "Target host/IP",
+          "variable": true,
+          "prompt_text": "Enter target hostname or IP:"
+        },
+        {
+          "flag": "-p",
+          "description": "Port(s) to scan",
+          "variable": true,
+          "prompt_text": "Enter port(s) (e.g., 80 or 80,443,8080):"
+        }
+      ]
+    },
+    "Scanning": {
+      "options": [
+        {
+          "flag": "-Plugins tests",
+          "description": "Run specific tests (apacheusers, apachedos, etc.)",
+          "variable": true,
+          "prompt_text": "Enter plugin name (leave empty for all):"
+        },
+        {
+          "flag": "-scan-all",
+          "description": "Scan all possible ports on host"
+        }
+      ]
+    },
+    "SSL/TLS": {
+      "options": [
+        {
+          "flag": "-ssl",
+          "description": "Force SSL"
+        },
+        {
+          "flag": "-nossl",
+          "description": "Disable SSL"
+        }
+      ]
+    },
+    "Authentication": {
+      "options": [
+        {
+          "flag": "-id",
+          "description": "HTTP authentication",
+          "variable": true,
+          "prompt_text": "Enter HTTP auth (username:password):"
+        }
+      ]
+    },
+    "Output": {
+      "options": [
+        {
+          "flag": "-output",
+          "description": "Output results to file",
+          "variable": true,
+          "prompt_text": "Enter output filename:"
+        },
+        {
+          "flag": "-Format",
+          "description": "Output format (txt, csv, json, html)",
+          "variable": true,
+          "prompt_text": "Enter format (txt, csv, json, html):"
+        }
+      ]
+    },
+    "Options": {
+      "options": [
+        {
+          "flag": "-v",
+          "description": "Verbose output"
+        },
+        {
+          "flag": "-no404",
+          "description": "Skip 404 responses"
+        }
+      ]
+    }
+  },
+  "required": {
+    "target": {
+      "prompt": "Enter target (hostname:port or IP:port):",
+      "description": "Web server target to scan"
+    }
+  }
+}

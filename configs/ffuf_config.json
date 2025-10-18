@@ -1,0 +1,119 @@
+{
+  "name": "FFUF",
+  "description": "Fast web fuzzer written in Go for content discovery and parameter fuzzing",
+  "command": "ffuf",
+  "categories": {
+    "Target": {
+      "options": [
+        {
+          "flag": "-u",
+          "description": "Target URL with FUZZ keyword",
+          "variable": true,
+          "prompt_text": "Enter URL with FUZZ keyword (e.g., http://target.com/FUZZ):"
+        }
+      ]
+    },
+    "Wordlist": {
+      "options": [
+        {
+          "flag": "-w",
+          "description": "Wordlist file",
+          "variable": true,
+          "prompt_text": "Enter path to wordlist:"
+        }
+      ]
+    },
+    "Filtering": {
+      "options": [
+        {
+          "flag": "-fs",
+          "description": "Filter by response size",
+          "variable": true,
+          "prompt_text": "Enter response size to filter:"
+        },
+        {
+          "flag": "-fc",
+          "description": "Filter by status code",
+          "variable": true,
+          "prompt_text": "Enter status codes to filter (e.g., 404,403):"
+        },
+        {
+          "flag": "-fr",
+          "description": "Filter by regex",
+          "variable": true,
+          "prompt_text": "Enter regex pattern:"
+        }
+      ]
+    },
+    "Matching": {
+      "options": [
+        {
+          "flag": "-ms",
+          "description": "Match by response size",
+          "variable": true,
+          "prompt_text": "Enter response size to match:"
+        },
+        {
+          "flag": "-mc",
+          "description": "Match by status code",
+          "variable": true,
+          "prompt_text": "Enter status codes to match (default: 200):"
+        }
+      ]
+    },
+    "Performance": {
+      "options": [
+        {
+          "flag": "-t",
+          "description": "Number of threads",
+          "variable": true,
+          "prompt_text": "Enter number of threads (default 40):"
+        },
+        {
+          "flag": "-rate",
+          "description": "Requests per second",
+          "variable": true,
+          "prompt_text": "Enter rate limit (requests/sec):"
+        }
+      ]
+    },
+    "Output": {
+      "options": [
+        {
+          "flag": "-o",
+          "description": "Output file",
+          "variable": true,
+          "prompt_text": "Enter output filename:"
+        },
+        {
+          "flag": "-of",
+          "description": "Output format (json, csv, ecsv, html)",
+          "variable": true,
+          "prompt_text": "Enter output format (json, csv, ecsv, html):"
+        }
+      ]
+    },
+    "Options": {
+      "options": [
+        {
+          "flag": "-c",
+          "description": "Colorize output"
+        },
+        {
+          "flag": "-v",
+          "description": "Verbose output"
+        }
+      ]
+    }
+  },
+  "required": {
+    "url": {
+      "prompt": "Enter target URL with FUZZ keyword:",
+      "description": "Target URL (e.g., http://target.com/path/FUZZ)"
+    },
+    "wordlist": {
+      "prompt": "Enter wordlist path:",
+      "description": "Path to wordlist file"
+    }
+  }
+}

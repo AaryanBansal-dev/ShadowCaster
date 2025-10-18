@@ -1,0 +1,69 @@
+{
+  "name": "Binwalk",
+  "description": "Search and analyze binary images for embedded files and executable code",
+  "command": "binwalk",
+  "categories": {
+    "Analysis": {
+      "options": [
+        {
+          "flag": "-v",
+          "description": "Verbose analysis"
+        },
+        {
+          "flag": "--signature",
+          "description": "Show file signatures"
+        },
+        {
+          "flag": "--entropy",
+          "description": "Display entropy analysis"
+        }
+      ]
+    },
+    "Extraction": {
+      "options": [
+        {
+          "flag": "-e",
+          "description": "Extract embedded files"
+        },
+        {
+          "flag": "-D",
+          "description": "Directory to extract to",
+          "variable": true,
+          "prompt_text": "Enter extraction directory:"
+        }
+      ]
+    },
+    "Scanning": {
+      "options": [
+        {
+          "flag": "-R",
+          "description": "Recursive scan"
+        },
+        {
+          "flag": "--scan-delay",
+          "description": "Delay between scans (ms)",
+          "variable": true,
+          "prompt_text": "Enter delay in milliseconds:"
+        }
+      ]
+    },
+    "Output": {
+      "options": [
+        {
+          "flag": "-C",
+          "description": "Disable colored output"
+        },
+        {
+          "flag": "-M",
+          "description": "Matryoshka scan (nested files)"
+        }
+      ]
+    }
+  },
+  "required": {
+    "file": {
+      "prompt": "Enter binary file path:",
+      "description": "Binary file to analyze"
+    }
+  }
+}

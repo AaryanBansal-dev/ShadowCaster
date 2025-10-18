@@ -1,0 +1,75 @@
+{
+  "name": "ExifTool",
+  "description": "Read, write, and edit metadata in various file formats",
+  "command": "exiftool",
+  "categories": {
+    "File Operations": {
+      "options": [
+        {
+          "flag": "",
+          "description": "View all metadata",
+          "variable": true,
+          "prompt_text": "Enter file path:"
+        }
+      ]
+    },
+    "Modify": {
+      "options": [
+        {
+          "flag": "-Artist",
+          "description": "Set artist metadata",
+          "variable": true,
+          "prompt_text": "Enter artist name:"
+        },
+        {
+          "flag": "-Copyright",
+          "description": "Set copyright metadata",
+          "variable": true,
+          "prompt_text": "Enter copyright info:"
+        }
+      ]
+    },
+    "Extract": {
+      "options": [
+        {
+          "flag": "-b",
+          "description": "Extract binary metadata (no ASCII)"
+        }
+      ]
+    },
+    "Output": {
+      "options": [
+        {
+          "flag": "-a",
+          "description": "Show all metadata"
+        },
+        {
+          "flag": "-G",
+          "description": "Group metadata by category"
+        },
+        {
+          "flag": "-json",
+          "description": "Output as JSON"
+        }
+      ]
+    },
+    "Options": {
+      "options": [
+        {
+          "flag": "-duplicates",
+          "description": "Show duplicate tags"
+        },
+        {
+          "flag": "-struct",
+          "description": "Extract structured data"
+        }
+      ]
+    }
+  },
+  "required": {
+    "file": {
+      "prompt": "Enter file path:",
+      "description": "File to analyze/modify"
+    }
+  }
+}

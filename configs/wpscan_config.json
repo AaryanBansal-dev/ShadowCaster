@@ -1,0 +1,97 @@
+{
+  "name": "WPScan",
+  "description": "WordPress security scanner",
+  "command": "wpscan",
+  "categories": {
+    "Target": {
+      "options": [
+        {
+          "flag": "--url",
+          "description": "The WordPress URL to scan",
+          "variable": true,
+          "prompt_text": "Enter WordPress URL (e.g., http://target.com):"
+        }
+      ]
+    },
+    "Reconnaissance": {
+      "options": [
+        {
+          "flag": "--enumerate p",
+          "description": "Enumerate plugins"
+        },
+        {
+          "flag": "--enumerate t",
+          "description": "Enumerate themes"
+        },
+        {
+          "flag": "--enumerate u",
+          "description": "Enumerate users"
+        },
+        {
+          "flag": "--enumerate a",
+          "description": "Enumerate all (plugins, themes, users)"
+        }
+      ]
+    },
+    "Detection": {
+      "options": [
+        {
+          "flag": "--detection-mode",
+          "description": "Detection mode",
+          "variable": true,
+          "prompt_text": "Enter detection mode (mixed, passive, aggressive, default=mixed):"
+        }
+      ]
+    },
+    "Authentication": {
+      "options": [
+        {
+          "flag": "--usernames",
+          "description": "Target usernames",
+          "variable": true,
+          "prompt_text": "Enter comma-separated usernames:"
+        },
+        {
+          "flag": "--passwords",
+          "description": "Passwords file",
+          "variable": true,
+          "prompt_text": "Enter path to passwords file:"
+        }
+      ]
+    },
+    "Output": {
+      "options": [
+        {
+          "flag": "--format",
+          "description": "Output format",
+          "variable": true,
+          "prompt_text": "Enter format (cli, json, default=cli):"
+        },
+        {
+          "flag": "-o",
+          "description": "Output file",
+          "variable": true,
+          "prompt_text": "Enter output filename:"
+        }
+      ]
+    },
+    "Additional": {
+      "options": [
+        {
+          "flag": "-v",
+          "description": "Verbose output"
+        },
+        {
+          "flag": "--no-banner",
+          "description": "Disable banner output"
+        }
+      ]
+    }
+  },
+  "required": {
+    "url": {
+      "prompt": "Enter WordPress URL:",
+      "description": "Target WordPress site URL"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+# ShadowCaster Requirements
+# Python 3.8+
+# No external dependencies required for core functionality
+# Optional: xclip or xsel for clipboard support
+
+# Core modules (stdlib only):
+# - json (config management)
+# - os (file operations)
+# - sys (system operations)
+# - pathlib (path handling)
+# - subprocess (command execution)
+# - datetime (timestamps)
+
+# Optional system packages for enhanced functionality:
+# Linux X11: sudo apt install xclip
+# Linux Wayland: sudo apt install xsel
+# macOS: pbcopy (built-in)

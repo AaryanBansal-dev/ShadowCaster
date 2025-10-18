@@ -1,0 +1,163 @@
+{
+  "name": "Nmap",
+  "description": "Network discovery and security auditing tool",
+  "command": "nmap",
+  "categories": {
+    "Scan Types": {
+      "options": [
+        {
+          "flag": "-sn",
+          "description": "Disable port scan - Ping sweep only"
+        },
+        {
+          "flag": "-sS",
+          "description": "TCP SYN scan (default for privileged users)"
+        },
+        {
+          "flag": "-sT",
+          "description": "TCP connect scan"
+        },
+        {
+          "flag": "-sU",
+          "description": "UDP scan"
+        },
+        {
+          "flag": "-sA",
+          "description": "TCP ACK scan"
+        },
+        {
+          "flag": "-sX",
+          "description": "Xmas scan"
+        }
+      ]
+    },
+    "Port Options": {
+      "options": [
+        {
+          "flag": "-p",
+          "description": "Ports to scan (-p22 or -p1-65535 or -p-)",
+          "variable": true,
+          "prompt_text": "Enter port range (e.g., 22,80,443 or 1-65535 or -):"
+        }
+      ]
+    },
+    "Host Discovery": {
+      "options": [
+        {
+          "flag": "-PR",
+          "description": "ARP ping scan"
+        },
+        {
+          "flag": "-PS",
+          "description": "TCP SYN ping"
+        },
+        {
+          "flag": "-PA",
+          "description": "TCP ACK ping"
+        },
+        {
+          "flag": "-PU",
+          "description": "UDP ping"
+        }
+      ]
+    },
+    "Timing Templates": {
+      "options": [
+        {
+          "flag": "-T0",
+          "description": "Paranoid - Very slow, IDS evasion"
+        },
+        {
+          "flag": "-T1",
+          "description": "Sneaky - Slow, IDS evasion"
+        },
+        {
+          "flag": "-T2",
+          "description": "Polite - Slows down to consume less bandwidth"
+        },
+        {
+          "flag": "-T3",
+          "description": "Normal - Default timing"
+        },
+        {
+          "flag": "-T4",
+          "description": "Aggressive - Faster scan, assumes good network"
+        },
+        {
+          "flag": "-T5",
+          "description": "Insane - Very aggressive, unreliable on poor networks"
+        }
+      ]
+    },
+    "Output Options": {
+      "options": [
+        {
+          "flag": "-oN",
+          "description": "Output in normal format",
+          "variable": true,
+          "prompt_text": "Enter output filename (.txt):"
+        },
+        {
+          "flag": "-oX",
+          "description": "Output in XML format",
+          "variable": true,
+          "prompt_text": "Enter output filename (.xml):"
+        },
+        {
+          "flag": "-oG",
+          "description": "Output in greppable format",
+          "variable": true,
+          "prompt_text": "Enter output filename (.gnmap):"
+        },
+        {
+          "flag": "-oA",
+          "description": "Output in all formats",
+          "variable": true,
+          "prompt_text": "Enter output basename (without extension):"
+        }
+      ]
+    },
+    "Service Detection": {
+      "options": [
+        {
+          "flag": "-sV",
+          "description": "Service version detection"
+        },
+        {
+          "flag": "-O",
+          "description": "OS detection"
+        },
+        {
+          "flag": "-A",
+          "description": "Aggressive scan (OS, version, script, traceroute)"
+        }
+      ]
+    },
+    "Additional Options": {
+      "options": [
+        {
+          "flag": "-v",
+          "description": "Increase verbosity level"
+        },
+        {
+          "flag": "-vv",
+          "description": "Very verbose output"
+        },
+        {
+          "flag": "--reason",
+          "description": "Display reason for port state"
+        },
+        {
+          "flag": "--open",
+          "description": "Show only open ports"
+        }
+      ]
+    }
+  },
+  "required": {
+    "target": {
+      "prompt": "Enter target (IP, hostname, or CIDR):",
+      "description": "The target to scan"
+    }
+  }
+}

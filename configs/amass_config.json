@@ -1,0 +1,81 @@
+{
+  "name": "Amass",
+  "description": "In-depth attack surface mapping and external asset discovery",
+  "command": "amass",
+  "categories": {
+    "Input": {
+      "options": [
+        {
+          "flag": "-d",
+          "description": "Target domain",
+          "variable": true,
+          "prompt_text": "Enter target domain:"
+        }
+      ]
+    },
+    "Enumeration": {
+      "options": [
+        {
+          "flag": "-brute",
+          "description": "Perform brute-force subdomain enumeration"
+        },
+        {
+          "flag": "-min-for-recursive",
+          "description": "Minimum number for recursive searches",
+          "variable": true,
+          "prompt_text": "Enter minimum value (default 1):"
+        }
+      ]
+    },
+    "Sources": {
+      "options": [
+        {
+          "flag": "-src",
+          "description": "Print sources of discovered assets"
+        },
+        {
+          "flag": "-list-sources",
+          "description": "List available data sources"
+        }
+      ]
+    },
+    "Output": {
+      "options": [
+        {
+          "flag": "-o",
+          "description": "Output file",
+          "variable": true,
+          "prompt_text": "Enter output filename:"
+        },
+        {
+          "flag": "-oA",
+          "description": "Output all formats",
+          "variable": true,
+          "prompt_text": "Enter output basename:"
+        }
+      ]
+    },
+    "Performance": {
+      "options": [
+        {
+          "flag": "-timeout",
+          "description": "Timeout for enumeration (seconds)",
+          "variable": true,
+          "prompt_text": "Enter timeout in seconds (default 60):"
+        },
+        {
+          "flag": "-max-depth",
+          "description": "Maximum depth for recursive searches",
+          "variable": true,
+          "prompt_text": "Enter maximum depth:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "domain": {
+      "prompt": "Enter target domain:",
+      "description": "Domain for enumeration"
+    }
+  }
+}

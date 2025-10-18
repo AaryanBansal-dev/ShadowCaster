@@ -1,0 +1,95 @@
+{
+  "name": "Dirsearch",
+  "description": "Web path scanner with better accuracy and reporting than dirb",
+  "command": "dirsearch",
+  "categories": {
+    "Target": {
+      "options": [
+        {
+          "flag": "-u",
+          "description": "Target URL",
+          "variable": true,
+          "prompt_text": "Enter target URL (e.g., http://target.com):"
+        }
+      ]
+    },
+    "Wordlist": {
+      "options": [
+        {
+          "flag": "-w",
+          "description": "Wordlist file",
+          "variable": true,
+          "prompt_text": "Enter path to wordlist:"
+        }
+      ]
+    },
+    "Extensions": {
+      "options": [
+        {
+          "flag": "-e",
+          "description": "File extensions to test",
+          "variable": true,
+          "prompt_text": "Enter extensions (e.g., php,asp,html,txt):"
+        }
+      ]
+    },
+    "HTTP": {
+      "options": [
+        {
+          "flag": "-H",
+          "description": "Custom header",
+          "variable": true,
+          "prompt_text": "Enter custom header (e.g., Authorization: Bearer token):"
+        },
+        {
+          "flag": "--cookie",
+          "description": "HTTP cookie",
+          "variable": true,
+          "prompt_text": "Enter cookie:"
+        }
+      ]
+    },
+    "Filtering": {
+      "options": [
+        {
+          "flag": "--exclude-status",
+          "description": "Exclude status codes",
+          "variable": true,
+          "prompt_text": "Enter status codes to exclude (e.g., 404,403):"
+        }
+      ]
+    },
+    "Performance": {
+      "options": [
+        {
+          "flag": "-t",
+          "description": "Number of threads",
+          "variable": true,
+          "prompt_text": "Enter number of threads (default 30):"
+        },
+        {
+          "flag": "--delay",
+          "description": "Delay between requests (seconds)",
+          "variable": true,
+          "prompt_text": "Enter delay in seconds:"
+        }
+      ]
+    },
+    "Output": {
+      "options": [
+        {
+          "flag": "--format",
+          "description": "Output format (simple, plain, json)",
+          "variable": true,
+          "prompt_text": "Enter format (simple, plain, json):"
+        }
+      ]
+    }
+  },
+  "required": {
+    "url": {
+      "prompt": "Enter target URL:",
+      "description": "Web server target URL"
+    }
+  }
+}

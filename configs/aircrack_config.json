@@ -1,0 +1,85 @@
+{
+  "name": "Aircrack-ng",
+  "description": "Wireless network assessment and cracking tool suite",
+  "command": "aircrack-ng",
+  "categories": {
+    "Capture File": {
+      "options": [
+        {
+          "flag": "",
+          "description": "Capture file to analyze",
+          "variable": true,
+          "prompt_text": "Enter path to capture file (.cap or .pcapng):"
+        }
+      ]
+    },
+    "Attack Mode": {
+      "options": [
+        {
+          "flag": "-a 1",
+          "description": "WEP attack"
+        },
+        {
+          "flag": "-a 2",
+          "description": "WPA/WPA2-PSK attack"
+        }
+      ]
+    },
+    "Dictionary Attack": {
+      "options": [
+        {
+          "flag": "-w",
+          "description": "Wordlist/dictionary file",
+          "variable": true,
+          "prompt_text": "Enter path to wordlist:"
+        }
+      ]
+    },
+    "Target Selection": {
+      "options": [
+        {
+          "flag": "-b",
+          "description": "Target BSSID",
+          "variable": true,
+          "prompt_text": "Enter target BSSID (MAC address):"
+        },
+        {
+          "flag": "-e",
+          "description": "Target SSID",
+          "variable": true,
+          "prompt_text": "Enter target SSID (network name):"
+        }
+      ]
+    },
+    "Performance": {
+      "options": [
+        {
+          "flag": "-O",
+          "description": "Use GPU acceleration"
+        },
+        {
+          "flag": "-j",
+          "description": "Number of CPU cores",
+          "variable": true,
+          "prompt_text": "Enter number of CPU cores to use:"
+        }
+      ]
+    },
+    "Output": {
+      "options": [
+        {
+          "flag": "-o",
+          "description": "Output format",
+          "variable": true,
+          "prompt_text": "Enter output format (csv, txt, default=txt):"
+        }
+      ]
+    }
+  },
+  "required": {
+    "capture": {
+      "prompt": "Enter path to capture file:",
+      "description": "The capture file to analyze"
+    }
+  }
+}

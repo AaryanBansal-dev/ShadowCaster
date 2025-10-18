@@ -1,0 +1,99 @@
+{
+  "name": "Hydra",
+  "description": "Fast network logon cracker supporting many protocols",
+  "command": "hydra",
+  "categories": {
+    "Protocol": {
+      "options": [
+        {
+          "flag": "-P",
+          "description": "Use password list",
+          "variable": true,
+          "prompt_text": "Enter path to password file:"
+        }
+      ]
+    },
+    "Authentication": {
+      "options": [
+        {
+          "flag": "-l",
+          "description": "Single login name",
+          "variable": true,
+          "prompt_text": "Enter login name:"
+        },
+        {
+          "flag": "-L",
+          "description": "Login names from file",
+          "variable": true,
+          "prompt_text": "Enter path to login file:"
+        }
+      ]
+    },
+    "Target": {
+      "options": [
+        {
+          "flag": "ssh",
+          "description": "SSH service"
+        },
+        {
+          "flag": "ftp",
+          "description": "FTP service"
+        },
+        {
+          "flag": "http-get",
+          "description": "HTTP GET authentication"
+        },
+        {
+          "flag": "http-post-form",
+          "description": "HTTP POST form"
+        },
+        {
+          "flag": "mysql",
+          "description": "MySQL service"
+        },
+        {
+          "flag": "smb",
+          "description": "SMB/Windows shares"
+        }
+      ]
+    },
+    "Performance": {
+      "options": [
+        {
+          "flag": "-t",
+          "description": "Number of parallel tasks",
+          "variable": true,
+          "prompt_text": "Enter number of tasks (default 16):"
+        },
+        {
+          "flag": "-w",
+          "description": "Wait time in seconds",
+          "variable": true,
+          "prompt_text": "Enter wait time in seconds:"
+        }
+      ]
+    },
+    "Verbosity": {
+      "options": [
+        {
+          "flag": "-v",
+          "description": "Verbose mode"
+        },
+        {
+          "flag": "-V",
+          "description": "Show login+pass for each attempt"
+        }
+      ]
+    }
+  },
+  "required": {
+    "target": {
+      "prompt": "Enter target IP/hostname:",
+      "description": "Target host"
+    },
+    "service": {
+      "prompt": "Enter service (ssh, ftp, http-get, mysql, smb, etc):",
+      "description": "Service to attack"
+    }
+  }
+}

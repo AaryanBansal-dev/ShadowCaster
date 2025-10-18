@@ -1,0 +1,67 @@
+{
+  "name": "John the Ripper",
+  "description": "Fast password cracker for detecting weak passwords",
+  "command": "john",
+  "categories": {
+    "Wordlist & Rules": {
+      "options": [
+        {
+          "flag": "--wordlist",
+          "description": "Load custom wordlist file",
+          "variable": true,
+          "prompt_text": "Enter path to wordlist file:"
+        },
+        {
+          "flag": "--rules",
+          "description": "Enable word mangling rules"
+        },
+        {
+          "flag": "--single",
+          "description": "Single-crack mode"
+        }
+      ]
+    },
+    "Hash Format": {
+      "options": [
+        {
+          "flag": "--format",
+          "description": "Specify hash format (NT, raw-md5, etc.)",
+          "variable": true,
+          "prompt_text": "Enter hash format (e.g., NT, raw-md5, SHA-512):"
+        }
+      ]
+    },
+    "Performance": {
+      "options": [
+        {
+          "flag": "--incremental",
+          "description": "Incremental mode (brute force)"
+        },
+        {
+          "flag": "--external",
+          "description": "Use external mode",
+          "variable": true,
+          "prompt_text": "Enter external mode name:"
+        }
+      ]
+    },
+    "Output": {
+      "options": [
+        {
+          "flag": "--show",
+          "description": "Show cracked passwords"
+        },
+        {
+          "flag": "--test",
+          "description": "Test hashing functions"
+        }
+      ]
+    }
+  },
+  "required": {
+    "hash_file": {
+      "prompt": "Enter path to hash file:",
+      "description": "File containing password hashes to crack"
+    }
+  }
+}

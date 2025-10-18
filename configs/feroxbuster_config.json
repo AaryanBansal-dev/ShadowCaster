@@ -1,0 +1,99 @@
+{
+  "name": "Feroxbuster",
+  "description": "Fast content discovery tool with advanced recursion capabilities",
+  "command": "feroxbuster",
+  "categories": {
+    "Target": {
+      "options": [
+        {
+          "flag": "-u",
+          "description": "Target URL",
+          "variable": true,
+          "prompt_text": "Enter target URL (e.g., http://target.com):"
+        }
+      ]
+    },
+    "Wordlist": {
+      "options": [
+        {
+          "flag": "-w",
+          "description": "Wordlist file",
+          "variable": true,
+          "prompt_text": "Enter path to wordlist:"
+        }
+      ]
+    },
+    "Extensions": {
+      "options": [
+        {
+          "flag": "-x",
+          "description": "File extensions",
+          "variable": true,
+          "prompt_text": "Enter extensions (e.g., php,html,txt):"
+        }
+      ]
+    },
+    "Performance": {
+      "options": [
+        {
+          "flag": "-t",
+          "description": "Number of concurrent threads",
+          "variable": true,
+          "prompt_text": "Enter number of threads (default 50):"
+        },
+        {
+          "flag": "--rate-limit",
+          "description": "Requests per second",
+          "variable": true,
+          "prompt_text": "Enter rate limit (requests/sec):"
+        }
+      ]
+    },
+    "Recursion": {
+      "options": [
+        {
+          "flag": "--depth",
+          "description": "Directory recursion depth",
+          "variable": true,
+          "prompt_text": "Enter recursion depth (default 4):"
+        },
+        {
+          "flag": "--no-recursion",
+          "description": "Disable recursion"
+        }
+      ]
+    },
+    "Filtering": {
+      "options": [
+        {
+          "flag": "--status-codes",
+          "description": "Response status codes to report",
+          "variable": true,
+          "prompt_text": "Enter status codes (e.g., 200,204,301):"
+        },
+        {
+          "flag": "--filter-status",
+          "description": "Filter out status codes",
+          "variable": true,
+          "prompt_text": "Enter status codes to filter (e.g., 404,403):"
+        }
+      ]
+    },
+    "Output": {
+      "options": [
+        {
+          "flag": "-o",
+          "description": "Output file",
+          "variable": true,
+          "prompt_text": "Enter output filename:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "url": {
+      "prompt": "Enter target URL:",
+      "description": "Base URL to scan"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Masscan",
+  "description": "Fastest internet port scanner - can scan entire internet in under 6 minutes",
+  "command": "masscan",
+  "categories": {
+    "Target": {
+      "options": [
+        {
+          "flag": "-iL",
+          "description": "Input target list from file",
+          "variable": true,
+          "prompt_text": "Enter path to target list file:"
+        }
+      ]
+    },
+    "Ports": {
+      "options": [
+        {
+          "flag": "-p",
+          "description": "Ports to scan (comma-separated)",
+          "variable": true,
+          "prompt_text": "Enter ports (e.g., 80 or 80,443,22 or 1-65535):"
+        }
+      ]
+    },
+    "Rate": {
+      "options": [
+        {
+          "flag": "--rate",
+          "description": "Packets per second (default 100)",
+          "variable": true,
+          "prompt_text": "Enter packet rate (packets/sec):"
+        }
+      ]
+    },
+    "Service Detection": {
+      "options": [
+        {
+          "flag": "--banners",
+          "description": "Grab banners from open ports"
+        }
+      ]
+    },
+    "Output": {
+      "options": [
+        {
+          "flag": "-oX",
+          "description": "Output in XML format",
+          "variable": true,
+          "prompt_text": "Enter output XML filename:"
+        },
+        {
+          "flag": "-oL",
+          "description": "Output in list format",
+          "variable": true,
+          "prompt_text": "Enter output list filename:"
+        },
+        {
+          "flag": "-oG",
+          "description": "Output in greppable format",
+          "variable": true,
+          "prompt_text": "Enter output greppable filename:"
+        }
+      ]
+    },
+    "Options": {
+      "options": [
+        {
+          "flag": "-sL",
+          "description": "List scan (no port scan)"
+        },
+        {
+          "flag": "--open-only",
+          "description": "Only report open ports"
+        }
+      ]
+    }
+  },
+  "required": {
+    "target": {
+      "prompt": "Enter target IP/CIDR or use -iL for file:",
+      "description": "Target IP address or CIDR range"
+    }
+  }
+}

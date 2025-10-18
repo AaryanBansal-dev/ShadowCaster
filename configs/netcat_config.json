@@ -1,0 +1,63 @@
+{
+  "name": "Netcat",
+  "description": "Network Swiss Army knife for reading/writing across networks",
+  "command": "nc",
+  "categories": {
+    "Mode": {
+      "options": [
+        {
+          "flag": "-l",
+          "description": "Listen mode"
+        }
+      ]
+    },
+    "Connection": {
+      "options": [
+        {
+          "flag": "-p",
+          "description": "Specify port",
+          "variable": true,
+          "prompt_text": "Enter port number:"
+        }
+      ]
+    },
+    "Execution": {
+      "options": [
+        {
+          "flag": "-e",
+          "description": "Execute command after connection",
+          "variable": true,
+          "prompt_text": "Enter command to execute (e.g., /bin/bash):"
+        }
+      ]
+    },
+    "Options": {
+      "options": [
+        {
+          "flag": "-v",
+          "description": "Verbose mode"
+        },
+        {
+          "flag": "-n",
+          "description": "Skip DNS lookup"
+        },
+        {
+          "flag": "-w",
+          "description": "Timeout in seconds",
+          "variable": true,
+          "prompt_text": "Enter timeout in seconds:"
+        },
+        {
+          "flag": "-z",
+          "description": "Zero-I/O mode (port scan only)"
+        }
+      ]
+    }
+  },
+  "required": {
+    "target": {
+      "prompt": "Enter target host (leave empty for listen mode):",
+      "description": "Target hostname or IP (for client mode)"
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "name": "Medusa",
+  "description": "Parallel network login auditor supporting many protocols",
+  "command": "medusa",
+  "categories": {
+    "Target": {
+      "options": [
+        {
+          "flag": "-h",
+          "description": "Target host IP or hostname",
+          "variable": true,
+          "prompt_text": "Enter target IP/hostname:"
+        }
+      ]
+    },
+    "Authentication": {
+      "options": [
+        {
+          "flag": "-u",
+          "description": "Single username",
+          "variable": true,
+          "prompt_text": "Enter username:"
+        },
+        {
+          "flag": "-U",
+          "description": "Username file",
+          "variable": true,
+          "prompt_text": "Enter path to username file:"
+        },
+        {
+          "flag": "-p",
+          "description": "Single password",
+          "variable": true,
+          "prompt_text": "Enter password:"
+        },
+        {
+          "flag": "-P",
+          "description": "Password file",
+          "variable": true,
+          "prompt_text": "Enter path to password file:"
+        }
+      ]
+    },
+    "Protocol": {
+      "options": [
+        {
+          "flag": "-M ssh",
+          "description": "SSH protocol"
+        },
+        {
+          "flag": "-M ftp",
+          "description": "FTP protocol"
+        },
+        {
+          "flag": "-M http",
+          "description": "HTTP protocol"
+        },
+        {
+          "flag": "-M mssql",
+          "description": "MSSQL protocol"
+        },
+        {
+          "flag": "-M mysql",
+          "description": "MySQL protocol"
+        },
+        {
+          "flag": "-M smb",
+          "description": "SMB protocol"
+        }
+      ]
+    },
+    "Performance": {
+      "options": [
+        {
+          "flag": "-t",
+          "description": "Number of parallel tasks",
+          "variable": true,
+          "prompt_text": "Enter number of parallel tasks (default 6):"
+        },
+        {
+          "flag": "-r",
+          "description": "Retry attempts",
+          "variable": true,
+          "prompt_text": "Enter retry attempts (default 3):"
+        }
+      ]
+    },
+    "Output": {
+      "options": [
+        {
+          "flag": "-O",
+          "description": "Output file",
+          "variable": true,
+          "prompt_text": "Enter output filename:"
+        },
+        {
+          "flag": "-v",
+          "description": "Verbose output"
+        }
+      ]
+    }
+  },
+  "required": {
+    "target": {
+      "prompt": "Enter target host:",
+      "description": "Target IP or hostname"
+    },
+    "protocol": {
+      "prompt": "Enter protocol (ssh, ftp, http, mssql, mysql, smb):",
+      "description": "Authentication protocol to test"
+    }
+  }
+}

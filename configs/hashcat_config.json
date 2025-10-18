@@ -1,0 +1,93 @@
+{
+  "name": "Hashcat",
+  "description": "World's fastest password recovery utility with hundreds of hash types",
+  "command": "hashcat",
+  "categories": {
+    "Hash Mode": {
+      "options": [
+        {
+          "flag": "-m",
+          "description": "Hash mode (0=MD5, 1000=NTLM, 1800=SHA-512, etc.)",
+          "variable": true,
+          "prompt_text": "Enter hash mode number (e.g., 0 for MD5, 1000 for NTLM):"
+        }
+      ]
+    },
+    "Attack Mode": {
+      "options": [
+        {
+          "flag": "-a 0",
+          "description": "Dictionary attack (straight)"
+        },
+        {
+          "flag": "-a 1",
+          "description": "Combination attack"
+        },
+        {
+          "flag": "-a 3",
+          "description": "Brute-force attack"
+        },
+        {
+          "flag": "-a 6",
+          "description": "Hybrid wordlist + mask"
+        },
+        {
+          "flag": "-a 7",
+          "description": "Hybrid mask + wordlist"
+        }
+      ]
+    },
+    "Wordlist & Masks": {
+      "options": [
+        {
+          "flag": "-w",
+          "description": "Workload profile (1-4, higher = faster)",
+          "variable": true,
+          "prompt_text": "Enter workload profile (1-4, default 3):"
+        }
+      ]
+    },
+    "Performance": {
+      "options": [
+        {
+          "flag": "-O",
+          "description": "Optimization: limit password length"
+        },
+        {
+          "flag": "-S",
+          "description": "Slow candidates mode"
+        },
+        {
+          "flag": "-d",
+          "description": "Use GPU device",
+          "variable": true,
+          "prompt_text": "Enter GPU device number (e.g., 1,2):"
+        }
+      ]
+    },
+    "Output": {
+      "options": [
+        {
+          "flag": "--show",
+          "description": "Show results from potfile"
+        },
+        {
+          "flag": "--outfile",
+          "description": "Output file format",
+          "variable": true,
+          "prompt_text": "Enter output format (e.g., 3 for hash:password):"
+        }
+      ]
+    }
+  },
+  "required": {
+    "hash_file": {
+      "prompt": "Enter path to hash file:",
+      "description": "File containing hashes to crack"
+    },
+    "wordlist": {
+      "prompt": "Enter wordlist path (leave empty for brute force):",
+      "description": "Dictionary file or mask pattern"
+    }
+  }
+}

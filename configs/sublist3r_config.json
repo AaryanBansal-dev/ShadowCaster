@@ -1,0 +1,71 @@
+{
+  "name": "Sublist3r",
+  "description": "Subdomain enumeration tool for fast subdomain discovery",
+  "command": "sublist3r",
+  "categories": {
+    "Target": {
+      "options": [
+        {
+          "flag": "-d",
+          "description": "Domain to enumerate",
+          "variable": true,
+          "prompt_text": "Enter domain to enumerate:"
+        }
+      ]
+    },
+    "Enumeration": {
+      "options": [
+        {
+          "flag": "-b",
+          "description": "Brute-force subdomains"
+        },
+        {
+          "flag": "-p",
+          "description": "Ports to use for brute force",
+          "variable": true,
+          "prompt_text": "Enter ports (default 80,443):"
+        }
+      ]
+    },
+    "Sources": {
+      "options": [
+        {
+          "flag": "-e",
+          "description": "Search engines to use",
+          "variable": true,
+          "prompt_text": "Enter search engines (default all):"
+        }
+      ]
+    },
+    "Output": {
+      "options": [
+        {
+          "flag": "-o",
+          "description": "Output file",
+          "variable": true,
+          "prompt_text": "Enter output filename:"
+        }
+      ]
+    },
+    "Options": {
+      "options": [
+        {
+          "flag": "-t",
+          "description": "Number of threads",
+          "variable": true,
+          "prompt_text": "Enter number of threads (default 10):"
+        },
+        {
+          "flag": "-v",
+          "description": "Verbose output"
+        }
+      ]
+    }
+  },
+  "required": {
+    "domain": {
+      "prompt": "Enter domain:",
+      "description": "Domain for subdomain enumeration"
+    }
+  }
+}
