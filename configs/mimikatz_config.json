@@ -1,0 +1,24 @@
+{
+  "name": "Mimikatz",
+  "description": "Extract credentials from Windows memory",
+  "command": "mimikatz",
+  "categories": {
+    "Commands": {
+      "options": [
+        {
+          "flag": "privilege::debug",
+          "description": "Get debug privilege"
+        },
+        {
+          "flag": "sekurlsa::logonpasswords",
+          "description": "List logon passwords"
+        },
+        {
+          "flag": "lsadump::sam",
+          "description": "Dump SAM database"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

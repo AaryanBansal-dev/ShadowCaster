@@ -1,0 +1,33 @@
+{
+  "name": "Nmap Vulners",
+  "description": "Nmap with Vulners NSE script",
+  "command": "nmap",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "--script",
+          "description": "Script",
+          "variable": true,
+          "prompt_text": "Enter vulners:"
+        },
+        {
+          "flag": "-sV",
+          "description": "Service version detection"
+        },
+        {
+          "flag": "-p",
+          "description": "Ports",
+          "variable": true,
+          "prompt_text": "Enter ports:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "target": {
+      "prompt": "Enter target:",
+      "description": "Target host"
+    }
+  }
+}

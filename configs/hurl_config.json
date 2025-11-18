@@ -1,0 +1,31 @@
+{
+  "name": "Hurl",
+  "description": "HTTP and REST client for testing",
+  "command": "hurl",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "--test",
+          "description": "Run tests"
+        },
+        {
+          "flag": "--json",
+          "description": "JSON output"
+        },
+        {
+          "flag": "--variable",
+          "description": "Set variable",
+          "variable": true,
+          "prompt_text": "Enter var=value:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "file": {
+      "prompt": "Enter .hurl file:",
+      "description": "Hurl file"
+    }
+  }
+}

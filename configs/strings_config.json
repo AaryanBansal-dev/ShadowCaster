@@ -1,0 +1,33 @@
+{
+  "name": "strings",
+  "description": "Print printable strings in files",
+  "command": "strings",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-a",
+          "description": "Scan entire file"
+        },
+        {
+          "flag": "-n",
+          "description": "Min string length",
+          "variable": true,
+          "prompt_text": "Enter length:"
+        },
+        {
+          "flag": "-e",
+          "description": "Encoding",
+          "variable": true,
+          "prompt_text": "Enter encoding:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "file": {
+      "prompt": "Enter file:",
+      "description": "File to analyze"
+    }
+  }
+}

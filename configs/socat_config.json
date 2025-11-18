@@ -1,0 +1,33 @@
+{
+  "name": "socat",
+  "description": "Multipurpose relay for bidirectional data transfer",
+  "command": "socat",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-d",
+          "description": "Increase verbosity"
+        },
+        {
+          "flag": "-v",
+          "description": "Verbose"
+        },
+        {
+          "flag": "-x",
+          "description": "Hex dump"
+        }
+      ]
+    }
+  },
+  "required": {
+    "address1": {
+      "prompt": "Enter address 1:",
+      "description": "First address"
+    },
+    "address2": {
+      "prompt": "Enter address 2:",
+      "description": "Second address"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "SharpHound",
+  "description": "BloodHound data collector",
+  "command": "sharphound.exe",
+  "categories": {
+    "Collection": {
+      "options": [
+        {
+          "flag": "-c",
+          "description": "Collection method (All,DCOnly)",
+          "variable": true,
+          "prompt_text": "Enter method:"
+        },
+        {
+          "flag": "-d",
+          "description": "Domain",
+          "variable": true,
+          "prompt_text": "Enter domain:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

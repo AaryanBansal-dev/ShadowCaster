@@ -1,0 +1,24 @@
+{
+  "name": "OpenSCAP",
+  "description": "Security compliance and vulnerability assessment",
+  "command": "oscap",
+  "categories": {
+    "Module": {
+      "options": [
+        {
+          "flag": "xccdf",
+          "description": "XCCDF operations"
+        },
+        {
+          "flag": "oval",
+          "description": "OVAL operations"
+        },
+        {
+          "flag": "cve",
+          "description": "CVE operations"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

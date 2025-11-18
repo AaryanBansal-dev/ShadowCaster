@@ -1,0 +1,36 @@
+{
+  "name": "rkhunter",
+  "description": "Rootkit hunter",
+  "command": "rkhunter",
+  "categories": {
+    "Commands": {
+      "options": [
+        {
+          "flag": "--check",
+          "description": "Run all checks"
+        },
+        {
+          "flag": "--update",
+          "description": "Update database"
+        },
+        {
+          "flag": "--propupd",
+          "description": "Update properties"
+        }
+      ]
+    },
+    "Options": {
+      "options": [
+        {
+          "flag": "--skip-keypress",
+          "description": "Skip key press"
+        },
+        {
+          "flag": "-c",
+          "description": "Check only"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

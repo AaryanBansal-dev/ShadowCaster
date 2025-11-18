@@ -1,0 +1,30 @@
+{
+  "name": "Arachni",
+  "description": "Web application security scanner",
+  "command": "arachni",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "--url",
+          "description": "Target URL",
+          "variable": true,
+          "prompt_text": "Enter URL:"
+        },
+        {
+          "flag": "--checks",
+          "description": "Checks to run",
+          "variable": true,
+          "prompt_text": "Enter checks:"
+        },
+        {
+          "flag": "--report-save-path",
+          "description": "Report path",
+          "variable": true,
+          "prompt_text": "Enter path:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

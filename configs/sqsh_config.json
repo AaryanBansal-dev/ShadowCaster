@@ -1,0 +1,30 @@
+{
+  "name": "sqsh",
+  "description": "Interactive SQL shell",
+  "command": "sqsh",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-S",
+          "description": "Server",
+          "variable": true,
+          "prompt_text": "Enter server:"
+        },
+        {
+          "flag": "-U",
+          "description": "Username",
+          "variable": true,
+          "prompt_text": "Enter username:"
+        },
+        {
+          "flag": "-P",
+          "description": "Password",
+          "variable": true,
+          "prompt_text": "Enter password:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

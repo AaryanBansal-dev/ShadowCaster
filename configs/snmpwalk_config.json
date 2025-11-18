@@ -1,0 +1,29 @@
+{
+  "name": "snmpwalk",
+  "description": "SNMP application to retrieve information",
+  "command": "snmpwalk",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-v",
+          "description": "Version (1,2c,3)",
+          "variable": true,
+          "prompt_text": "Enter version:"
+        },
+        {
+          "flag": "-c",
+          "description": "Community string",
+          "variable": true,
+          "prompt_text": "Enter community:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "host": {
+      "prompt": "Enter host:",
+      "description": "Target host"
+    }
+  }
+}

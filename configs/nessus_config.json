@@ -1,0 +1,24 @@
+{
+  "name": "Nessus",
+  "description": "Vulnerability scanner",
+  "command": "nessuscli",
+  "categories": {
+    "Commands": {
+      "options": [
+        {
+          "flag": "scan",
+          "description": "Manage scans"
+        },
+        {
+          "flag": "policy",
+          "description": "Manage policies"
+        },
+        {
+          "flag": "update",
+          "description": "Update plugins"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

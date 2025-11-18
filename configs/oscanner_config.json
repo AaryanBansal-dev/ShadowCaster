@@ -1,0 +1,24 @@
+{
+  "name": "OScanner",
+  "description": "Oracle assessment framework",
+  "command": "oscanner",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-s",
+          "description": "Server",
+          "variable": true,
+          "prompt_text": "Enter server:"
+        },
+        {
+          "flag": "-P",
+          "description": "Port",
+          "variable": true,
+          "prompt_text": "Enter port:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

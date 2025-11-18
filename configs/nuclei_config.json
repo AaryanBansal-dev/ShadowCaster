@@ -1,0 +1,46 @@
+{
+  "name": "Nuclei",
+  "description": "Fast vulnerability scanner based on templates",
+  "command": "nuclei",
+  "categories": {
+    "Target": {
+      "options": [
+        {
+          "flag": "-u",
+          "description": "Target URL",
+          "variable": true,
+          "prompt_text": "Enter URL:"
+        },
+        {
+          "flag": "-l",
+          "description": "Target list",
+          "variable": true,
+          "prompt_text": "Enter file:"
+        }
+      ]
+    },
+    "Templates": {
+      "options": [
+        {
+          "flag": "-t",
+          "description": "Templates",
+          "variable": true,
+          "prompt_text": "Enter templates:"
+        },
+        {
+          "flag": "-tags",
+          "description": "Tags to filter",
+          "variable": true,
+          "prompt_text": "Enter tags:"
+        },
+        {
+          "flag": "-severity",
+          "description": "Severity filter",
+          "variable": true,
+          "prompt_text": "Enter severity:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

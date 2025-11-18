@@ -1,0 +1,18 @@
+{
+  "name": "Maltego",
+  "description": "Interactive data mining tool",
+  "command": "maltego",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-graph",
+          "description": "Load graph file",
+          "variable": true,
+          "prompt_text": "Enter graph file:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

@@ -1,0 +1,18 @@
+{
+  "name": "BBQSQL",
+  "description": "Blind SQL injection framework",
+  "command": "bbqsql",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "--url",
+          "description": "Target URL",
+          "variable": true,
+          "prompt_text": "Enter URL:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

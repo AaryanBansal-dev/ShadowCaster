@@ -1,0 +1,34 @@
+{
+  "name": "Chisel",
+  "description": "Fast TCP/UDP tunnel over HTTP",
+  "command": "chisel",
+  "categories": {
+    "Mode": {
+      "options": [
+        {
+          "flag": "server",
+          "description": "Server mode"
+        },
+        {
+          "flag": "client",
+          "description": "Client mode"
+        }
+      ]
+    },
+    "Options": {
+      "options": [
+        {
+          "flag": "--port",
+          "description": "Port",
+          "variable": true,
+          "prompt_text": "Enter port:"
+        },
+        {
+          "flag": "--reverse",
+          "description": "Reverse mode"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

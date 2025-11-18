@@ -1,0 +1,33 @@
+{
+  "name": "DNSenum",
+  "description": "DNS enumeration tool",
+  "command": "dnsenum",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "--enum",
+          "description": "Enable enumeration"
+        },
+        {
+          "flag": "-f",
+          "description": "DNS servers file",
+          "variable": true,
+          "prompt_text": "Enter file:"
+        },
+        {
+          "flag": "--threads",
+          "description": "Threads",
+          "variable": true,
+          "prompt_text": "Enter threads:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "domain": {
+      "prompt": "Enter domain:",
+      "description": "Target domain"
+    }
+  }
+}

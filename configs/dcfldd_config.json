@@ -1,0 +1,36 @@
+{
+  "name": "dcfldd",
+  "description": "Enhanced dd for forensics",
+  "command": "dcfldd",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "if",
+          "description": "Input file",
+          "variable": true,
+          "prompt_text": "Enter input:"
+        },
+        {
+          "flag": "of",
+          "description": "Output file",
+          "variable": true,
+          "prompt_text": "Enter output:"
+        },
+        {
+          "flag": "hash",
+          "description": "Hash algorithm",
+          "variable": true,
+          "prompt_text": "Enter algorithm:"
+        },
+        {
+          "flag": "hashlog",
+          "description": "Hash log file",
+          "variable": true,
+          "prompt_text": "Enter log file:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

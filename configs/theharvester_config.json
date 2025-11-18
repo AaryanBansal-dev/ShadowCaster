@@ -1,0 +1,43 @@
+{
+  "name": "theHarvester",
+  "description": "E-mail, subdomain and people names harvester",
+  "command": "theHarvester",
+  "categories": {
+    "Data Sources": {
+      "options": [
+        {
+          "flag": "-b",
+          "description": "Data source (google,bing,all)",
+          "variable": true,
+          "prompt_text": "Enter source:"
+        },
+        {
+          "flag": "-l",
+          "description": "Limit results",
+          "variable": true,
+          "prompt_text": "Enter limit:"
+        }
+      ]
+    },
+    "Output": {
+      "options": [
+        {
+          "flag": "-f",
+          "description": "Output file",
+          "variable": true,
+          "prompt_text": "Enter filename:"
+        },
+        {
+          "flag": "-n",
+          "description": "DNS lookup"
+        }
+      ]
+    }
+  },
+  "required": {
+    "domain": {
+      "prompt": "Enter domain:",
+      "description": "Target domain"
+    }
+  }
+}

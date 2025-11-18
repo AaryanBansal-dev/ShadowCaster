@@ -1,0 +1,27 @@
+{
+  "name": "ProxyChains",
+  "description": "Force TCP connections through proxy",
+  "command": "proxychains",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-f",
+          "description": "Config file",
+          "variable": true,
+          "prompt_text": "Enter config:"
+        },
+        {
+          "flag": "-q",
+          "description": "Quiet mode"
+        }
+      ]
+    }
+  },
+  "required": {
+    "command": {
+      "prompt": "Enter command to proxy:",
+      "description": "Command"
+    }
+  }
+}

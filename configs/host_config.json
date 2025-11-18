@@ -1,0 +1,27 @@
+{
+  "name": "Host",
+  "description": "DNS lookup utility",
+  "command": "host",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-t",
+          "description": "Query type",
+          "variable": true,
+          "prompt_text": "Enter type:"
+        },
+        {
+          "flag": "-a",
+          "description": "All records"
+        }
+      ]
+    }
+  },
+  "required": {
+    "hostname": {
+      "prompt": "Enter hostname:",
+      "description": "Hostname"
+    }
+  }
+}

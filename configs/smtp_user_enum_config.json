@@ -1,0 +1,30 @@
+{
+  "name": "smtp-user-enum",
+  "description": "SMTP user enumeration tool",
+  "command": "smtp-user-enum",
+  "categories": {
+    "Mode": {
+      "options": [
+        {
+          "flag": "-M",
+          "description": "Mode (VRFY,EXPN,RCPT)",
+          "variable": true,
+          "prompt_text": "Enter mode:"
+        },
+        {
+          "flag": "-U",
+          "description": "Users file",
+          "variable": true,
+          "prompt_text": "Enter file:"
+        },
+        {
+          "flag": "-t",
+          "description": "Target",
+          "variable": true,
+          "prompt_text": "Enter target:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

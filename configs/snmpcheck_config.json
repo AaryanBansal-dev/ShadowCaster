@@ -1,0 +1,30 @@
+{
+  "name": "snmpcheck",
+  "description": "SNMP device enumerator",
+  "command": "snmpcheck",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-t",
+          "description": "Target",
+          "variable": true,
+          "prompt_text": "Enter target:"
+        },
+        {
+          "flag": "-c",
+          "description": "Community",
+          "variable": true,
+          "prompt_text": "Enter community:"
+        },
+        {
+          "flag": "-w",
+          "description": "Write to file",
+          "variable": true,
+          "prompt_text": "Enter file:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

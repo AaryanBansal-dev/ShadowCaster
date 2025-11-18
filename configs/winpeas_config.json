@@ -1,0 +1,20 @@
+{
+  "name": "WinPEAS",
+  "description": "Windows Privilege Escalation Awesome Script",
+  "command": "winpeas.exe",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "quiet",
+          "description": "Quiet mode"
+        },
+        {
+          "flag": "cmd",
+          "description": "CMD mode"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

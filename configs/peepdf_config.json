@@ -1,0 +1,31 @@
+{
+  "name": "peepdf",
+  "description": "PDF analysis and exploitation tool",
+  "command": "peepdf.py",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-i",
+          "description": "Interactive mode"
+        },
+        {
+          "flag": "-s",
+          "description": "Script file",
+          "variable": true,
+          "prompt_text": "Enter script:"
+        },
+        {
+          "flag": "-f",
+          "description": "Force mode"
+        }
+      ]
+    }
+  },
+  "required": {
+    "file": {
+      "prompt": "Enter PDF file:",
+      "description": "PDF file"
+    }
+  }
+}

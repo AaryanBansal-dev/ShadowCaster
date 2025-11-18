@@ -1,0 +1,16 @@
+{
+  "name": "BloodHound",
+  "description": "Active Directory attack path analysis",
+  "command": "bloodhound",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "--no-sandbox",
+          "description": "Disable sandbox"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

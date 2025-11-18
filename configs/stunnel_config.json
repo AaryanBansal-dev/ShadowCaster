@@ -1,0 +1,29 @@
+{
+  "name": "stunnel",
+  "description": "SSL encryption wrapper",
+  "command": "stunnel",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-d",
+          "description": "Daemon mode"
+        },
+        {
+          "flag": "-c",
+          "description": "Client mode"
+        },
+        {
+          "flag": "-s",
+          "description": "Server mode"
+        }
+      ]
+    }
+  },
+  "required": {
+    "config": {
+      "prompt": "Enter config file:",
+      "description": "Configuration file"
+    }
+  }
+}

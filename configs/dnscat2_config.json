@@ -1,0 +1,24 @@
+{
+  "name": "dnscat2",
+  "description": "DNS tunnel tool",
+  "command": "dnscat2",
+  "categories": {
+    "Mode": {
+      "options": [
+        {
+          "flag": "--dns",
+          "description": "DNS server",
+          "variable": true,
+          "prompt_text": "Enter server:"
+        },
+        {
+          "flag": "--secret",
+          "description": "Shared secret",
+          "variable": true,
+          "prompt_text": "Enter secret:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

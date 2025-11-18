@@ -1,0 +1,32 @@
+{
+  "name": "Lynis",
+  "description": "Security auditing tool for Unix/Linux",
+  "command": "lynis",
+  "categories": {
+    "Commands": {
+      "options": [
+        {
+          "flag": "audit",
+          "description": "Audit mode"
+        },
+        {
+          "flag": "system",
+          "description": "Audit system"
+        }
+      ]
+    },
+    "Options": {
+      "options": [
+        {
+          "flag": "--quick",
+          "description": "Quick scan"
+        },
+        {
+          "flag": "--quiet",
+          "description": "Quiet mode"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

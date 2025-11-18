@@ -1,0 +1,36 @@
+{
+  "name": "Metagoofil",
+  "description": "Document and metadata harvester",
+  "command": "metagoofil",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-d",
+          "description": "Domain",
+          "variable": true,
+          "prompt_text": "Enter domain:"
+        },
+        {
+          "flag": "-t",
+          "description": "File types (pdf,doc,xls)",
+          "variable": true,
+          "prompt_text": "Enter types:"
+        },
+        {
+          "flag": "-l",
+          "description": "Limit",
+          "variable": true,
+          "prompt_text": "Enter limit:"
+        },
+        {
+          "flag": "-o",
+          "description": "Output directory",
+          "variable": true,
+          "prompt_text": "Enter directory:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

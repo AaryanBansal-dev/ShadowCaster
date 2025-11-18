@@ -1,0 +1,26 @@
+{
+  "name": "CMSeeK",
+  "description": "CMS detection and exploitation suite",
+  "command": "cmseek",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-u",
+          "description": "URL",
+          "variable": true,
+          "prompt_text": "Enter URL:"
+        },
+        {
+          "flag": "--follow-redirect",
+          "description": "Follow redirects"
+        },
+        {
+          "flag": "--no-redirect",
+          "description": "Don't follow redirects"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

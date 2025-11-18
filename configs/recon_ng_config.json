@@ -1,0 +1,24 @@
+{
+  "name": "Recon-ng",
+  "description": "Full-featured Web Reconnaissance framework",
+  "command": "recon-ng",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-r",
+          "description": "Run resource file",
+          "variable": true,
+          "prompt_text": "Enter resource file:"
+        },
+        {
+          "flag": "-w",
+          "description": "Workspace",
+          "variable": true,
+          "prompt_text": "Enter workspace:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

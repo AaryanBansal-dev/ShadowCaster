@@ -1,0 +1,31 @@
+{
+  "name": "sslyze",
+  "description": "Fast SSL/TLS scanner",
+  "command": "sslyze",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "--regular",
+          "description": "Regular HTTPS scan"
+        },
+        {
+          "flag": "--certinfo",
+          "description": "Certificate information"
+        },
+        {
+          "flag": "--json_out",
+          "description": "JSON output",
+          "variable": true,
+          "prompt_text": "Enter file:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "target": {
+      "prompt": "Enter target:",
+      "description": "Target host"
+    }
+  }
+}

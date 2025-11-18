@@ -1,0 +1,30 @@
+{
+  "name": "onesixtyone",
+  "description": "Fast SNMP scanner",
+  "command": "onesixtyone",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-c",
+          "description": "Community file",
+          "variable": true,
+          "prompt_text": "Enter file:"
+        },
+        {
+          "flag": "-i",
+          "description": "Input file",
+          "variable": true,
+          "prompt_text": "Enter file:"
+        },
+        {
+          "flag": "-o",
+          "description": "Output file",
+          "variable": true,
+          "prompt_text": "Enter file:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

@@ -1,0 +1,28 @@
+{
+  "name": "sslstrip",
+  "description": "SSL/TLS man-in-the-middle attack tool",
+  "command": "sslstrip",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-l",
+          "description": "Listen port",
+          "variable": true,
+          "prompt_text": "Enter port:"
+        },
+        {
+          "flag": "-w",
+          "description": "Log file",
+          "variable": true,
+          "prompt_text": "Enter log file:"
+        },
+        {
+          "flag": "-a",
+          "description": "All attacks"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

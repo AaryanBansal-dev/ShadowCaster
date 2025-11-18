@@ -1,0 +1,30 @@
+{
+  "name": "Wapiti",
+  "description": "Web application vulnerability scanner",
+  "command": "wapiti",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-u",
+          "description": "URL",
+          "variable": true,
+          "prompt_text": "Enter URL:"
+        },
+        {
+          "flag": "-m",
+          "description": "Module",
+          "variable": true,
+          "prompt_text": "Enter module:"
+        },
+        {
+          "flag": "-f",
+          "description": "Output format",
+          "variable": true,
+          "prompt_text": "Enter format:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

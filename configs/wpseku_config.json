@@ -1,0 +1,26 @@
+{
+  "name": "WPSeku",
+  "description": "WordPress security scanner",
+  "command": "wpseku",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "--url",
+          "description": "Target URL",
+          "variable": true,
+          "prompt_text": "Enter URL:"
+        },
+        {
+          "flag": "--enum",
+          "description": "Enumerate"
+        },
+        {
+          "flag": "--brute",
+          "description": "Brute force"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

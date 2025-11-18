@@ -1,0 +1,24 @@
+{
+  "name": "Fierce",
+  "description": "DNS reconnaissance tool",
+  "command": "fierce",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "--domain",
+          "description": "Domain",
+          "variable": true,
+          "prompt_text": "Enter domain:"
+        },
+        {
+          "flag": "--subdomain-file",
+          "description": "Subdomain list",
+          "variable": true,
+          "prompt_text": "Enter file:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

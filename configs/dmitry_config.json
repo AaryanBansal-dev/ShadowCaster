@@ -1,0 +1,37 @@
+{
+  "name": "DMitry",
+  "description": "Deepmagic Information Gathering Tool",
+  "command": "dmitry",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-w",
+          "description": "Whois lookup"
+        },
+        {
+          "flag": "-n",
+          "description": "Netcraft lookup"
+        },
+        {
+          "flag": "-s",
+          "description": "Subdomain search"
+        },
+        {
+          "flag": "-e",
+          "description": "Email search"
+        },
+        {
+          "flag": "-p",
+          "description": "Port scan"
+        }
+      ]
+    }
+  },
+  "required": {
+    "host": {
+      "prompt": "Enter hostname:",
+      "description": "Target host"
+    }
+  }
+}

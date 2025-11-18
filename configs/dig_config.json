@@ -1,0 +1,37 @@
+{
+  "name": "Dig",
+  "description": "DNS lookup utility",
+  "command": "dig",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "@server",
+          "description": "DNS server",
+          "variable": true,
+          "prompt_text": "Enter DNS server:"
+        },
+        {
+          "flag": "-t",
+          "description": "Query type",
+          "variable": true,
+          "prompt_text": "Enter type:"
+        },
+        {
+          "flag": "+short",
+          "description": "Short output"
+        },
+        {
+          "flag": "+trace",
+          "description": "Trace delegation"
+        }
+      ]
+    }
+  },
+  "required": {
+    "domain": {
+      "prompt": "Enter domain:",
+      "description": "Domain to query"
+    }
+  }
+}

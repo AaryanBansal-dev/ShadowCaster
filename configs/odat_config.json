@@ -1,0 +1,40 @@
+{
+  "name": "ODAT",
+  "description": "Oracle Database Attacking Tool",
+  "command": "odat.py",
+  "categories": {
+    "Commands": {
+      "options": [
+        {
+          "flag": "all",
+          "description": "Run all checks"
+        },
+        {
+          "flag": "tnscmd",
+          "description": "TNS commands"
+        },
+        {
+          "flag": "sidguesser",
+          "description": "SID guessing"
+        }
+      ]
+    },
+    "Options": {
+      "options": [
+        {
+          "flag": "-s",
+          "description": "Server",
+          "variable": true,
+          "prompt_text": "Enter server:"
+        },
+        {
+          "flag": "-d",
+          "description": "SID",
+          "variable": true,
+          "prompt_text": "Enter SID:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

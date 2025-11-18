@@ -1,0 +1,29 @@
+{
+  "name": "Whois",
+  "description": "Client for the whois directory service",
+  "command": "whois",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-h",
+          "description": "Whois server",
+          "variable": true,
+          "prompt_text": "Enter server:"
+        },
+        {
+          "flag": "-p",
+          "description": "Port",
+          "variable": true,
+          "prompt_text": "Enter port:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "query": {
+      "prompt": "Enter domain/IP:",
+      "description": "Query"
+    }
+  }
+}

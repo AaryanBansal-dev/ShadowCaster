@@ -5,7 +5,7 @@ A comprehensive CLI/TUI application for building penetration testing commands sa
 ## Features
 
 ✓ **Interactive Command Building** - Walk through prompts to build accurate commands  
-✓ **Multiple Tools Supported** - Nmap, Hydra, SQLMap, WPScan, Gobuster, Aircrack-ng  
+✓ **120+ Tools Supported** - Comprehensive penetration testing toolkit  
 ✓ **Command Preview** - Review commands before execution  
 ✓ **Clipboard Integration** - Copy commands to clipboard  
 ✓ **Template System** - Save and reuse command templates  
@@ -107,52 +107,39 @@ Enable in Settings for explanations of each flag and option. Great for learning!
 
 ## Supported Tools
 
-### Nmap
-Network discovery and security auditing
-- Scan type selection (SYN, TCP, UDP, etc.)
-- Port specification
-- Timing templates (T0-T5)
-- Service detection
-- Output formats (Normal, XML, Greppable)
+ShadowCaster now supports **120+ penetration testing tools** organized into the following categories:
 
-### Hydra
-Network logon cracker
-- Protocol selection
-- Login name/file selection
-- Password file
-- Performance tuning
-- Verbosity control
+### 🔐 Password & Authentication (14+ tools)
+Hydra, John the Ripper, Hashcat, Medusa, Ophcrack, RainbowCrack, Crunch, CeWL, Patator, Crowbar, and more
 
-### SQLMap
-SQL injection detection and exploitation
-- Target URL specification
-- Injection techniques
-- Detection level and risk
-- Database enumeration options
-- Multi-threading support
+### 🌐 Web Application Testing (20+ tools)
+Nmap, SQLMap, Nikto, Gobuster, FFUF, Dirsearch, Feroxbuster, BurpSuite, OWASP ZAP, wafw00f, Commix, w3af, WhatWeb, Wfuzz, XSSer, and more
 
-### WPScan
-WordPress vulnerability scanner
-- Target URL
-- Plugin/theme/user enumeration
-- Detection modes
-- Custom headers
-- Output formats
+### 🕵️ Reconnaissance & OSINT (15+ tools)
+Amass, Sublist3r, WPScan, theHarvester, Maltego, Recon-ng, SpiderFoot, Shodan CLI, DNSenum, DNSRecon, and more
 
-### Gobuster
-Directory/DNS/VHOST enumeration
-- Multiple modes (dir, dns, vhost)
-- Wordlist configuration
-- Status code filtering
-- Custom headers
-- Performance tuning
+### 📡 Network & Port Scanning (15+ tools)
+Masscan, Netcat, hping3, Unicornscan, ZMap, tcpdump, Wireshark, Ettercap, Bettercap, and more
 
-### Aircrack-ng
-Wireless network security suite
-- WEP/WPA attack modes
-- Dictionary attack support
-- Target BSSID/SSID selection
-- GPU acceleration options
+### ⚔️ Exploitation Frameworks (10+ tools)
+Metasploit, msfvenom, SearchSploit, Armitage, BeEF, Social-Engineer Toolkit, Veil, Empire, and more
+
+### 🔓 Wireless & Bluetooth (10+ tools)
+Aircrack-ng, Reaver, Bully, Wifite, Airgeddon, Pixiewps, cowpatty, Pyrit, MDK3, and more
+
+### 📁 Forensics & Data Analysis (15+ tools)
+Autopsy, Volatility, Foremost, ExifTool, Binwalk, bulk_extractor, YARA, ClamAV, and more
+
+### 🛡️ Vulnerability Scanning (15+ tools)
+OpenVAS, Nessus, Lynis, Wapiti, Arachni, Nuclei, Trivy, Grype, Snyk, and more
+
+### 💾 Database Testing (10+ tools)
+sqlninja, jSQL Injection, mongoaudit, NoSQLMap, ODAT, and more
+
+### 🎯 Post-Exploitation (15+ tools)
+CrackMapExec, Mimikatz, Responder, LinPEAS, WinPEAS, BloodHound, Impacket, enum4linux, and more
+
+For a complete list of all 120 tools, see [ALL_TOOLS.md](ALL_TOOLS.md)
 
 ## Examples
 

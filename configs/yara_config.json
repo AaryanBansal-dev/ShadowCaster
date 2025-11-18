@@ -1,0 +1,33 @@
+{
+  "name": "YARA",
+  "description": "Pattern matching for malware research",
+  "command": "yara",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-r",
+          "description": "Recursive"
+        },
+        {
+          "flag": "-s",
+          "description": "Print matching strings"
+        },
+        {
+          "flag": "-w",
+          "description": "Disable warnings"
+        }
+      ]
+    }
+  },
+  "required": {
+    "rules": {
+      "prompt": "Enter rules file:",
+      "description": "YARA rules file"
+    },
+    "target": {
+      "prompt": "Enter target file/dir:",
+      "description": "Target to scan"
+    }
+  }
+}

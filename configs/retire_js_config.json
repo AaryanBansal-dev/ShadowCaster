@@ -1,0 +1,24 @@
+{
+  "name": "RetireJS",
+  "description": "Scanner detecting use of vulnerable JavaScript libraries",
+  "command": "retire",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "--path",
+          "description": "Path to scan",
+          "variable": true,
+          "prompt_text": "Enter path:"
+        },
+        {
+          "flag": "--outputformat",
+          "description": "Format",
+          "variable": true,
+          "prompt_text": "Enter format:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

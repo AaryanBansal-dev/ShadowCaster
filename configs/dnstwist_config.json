@@ -1,0 +1,31 @@
+{
+  "name": "dnstwist",
+  "description": "Domain name permutation engine for phishing detection",
+  "command": "dnstwist",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-r",
+          "description": "Resolve domains"
+        },
+        {
+          "flag": "-g",
+          "description": "Check GeoIP"
+        },
+        {
+          "flag": "-o",
+          "description": "Output file",
+          "variable": true,
+          "prompt_text": "Enter file:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "domain": {
+      "prompt": "Enter domain:",
+      "description": "Domain name"
+    }
+  }
+}
