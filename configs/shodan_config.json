@@ -1,0 +1,33 @@
+{
+  "name": "Shodan CLI",
+  "description": "Command-line tool for Shodan",
+  "command": "shodan",
+  "categories": {
+    "Commands": {
+      "options": [
+        {
+          "flag": "search",
+          "description": "Search Shodan"
+        },
+        {
+          "flag": "host",
+          "description": "View host info"
+        },
+        {
+          "flag": "count",
+          "description": "Count search results"
+        },
+        {
+          "flag": "download",
+          "description": "Download search results"
+        }
+      ]
+    }
+  },
+  "required": {
+    "query": {
+      "prompt": "Enter query/IP:",
+      "description": "Search query or IP"
+    }
+  }
+}

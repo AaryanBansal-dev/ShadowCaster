@@ -1,0 +1,24 @@
+{
+  "name": "Snyk",
+  "description": "Find and fix vulnerabilities in dependencies",
+  "command": "snyk",
+  "categories": {
+    "Commands": {
+      "options": [
+        {
+          "flag": "test",
+          "description": "Test for vulnerabilities"
+        },
+        {
+          "flag": "monitor",
+          "description": "Monitor project"
+        },
+        {
+          "flag": "fix",
+          "description": "Fix vulnerabilities"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "httptunnel",
+  "description": "Tunnel over HTTP",
+  "command": "htc",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-F",
+          "description": "Forward port",
+          "variable": true,
+          "prompt_text": "Enter port:"
+        },
+        {
+          "flag": "-P",
+          "description": "Proxy",
+          "variable": true,
+          "prompt_text": "Enter proxy:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "server": {
+      "prompt": "Enter server:port:",
+      "description": "Server"
+    }
+  }
+}

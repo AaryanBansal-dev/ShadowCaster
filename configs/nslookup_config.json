@@ -1,0 +1,23 @@
+{
+  "name": "Nslookup",
+  "description": "Query Internet name servers",
+  "command": "nslookup",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-type",
+          "description": "Query type (A,MX,NS)",
+          "variable": true,
+          "prompt_text": "Enter type:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "host": {
+      "prompt": "Enter hostname:",
+      "description": "Hostname to lookup"
+    }
+  }
+}

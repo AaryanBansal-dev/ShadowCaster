@@ -1,0 +1,24 @@
+{
+  "name": "sqlninja",
+  "description": "SQL Server injection and takeover tool",
+  "command": "sqlninja",
+  "categories": {
+    "Mode": {
+      "options": [
+        {
+          "flag": "-m",
+          "description": "Mode (test,fingerprint,bruteforce)",
+          "variable": true,
+          "prompt_text": "Enter mode:"
+        },
+        {
+          "flag": "-f",
+          "description": "Config file",
+          "variable": true,
+          "prompt_text": "Enter config:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

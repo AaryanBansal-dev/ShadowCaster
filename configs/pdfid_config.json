@@ -1,0 +1,25 @@
+{
+  "name": "pdfid",
+  "description": "Scan PDF file for suspicious elements",
+  "command": "pdfid.py",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-s",
+          "description": "Scan directory"
+        },
+        {
+          "flag": "-f",
+          "description": "Force scan"
+        }
+      ]
+    }
+  },
+  "required": {
+    "file": {
+      "prompt": "Enter PDF file:",
+      "description": "PDF file to analyze"
+    }
+  }
+}

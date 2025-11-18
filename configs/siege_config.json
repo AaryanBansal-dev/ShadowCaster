@@ -1,0 +1,35 @@
+{
+  "name": "Siege",
+  "description": "HTTP load testing and benchmarking utility",
+  "command": "siege",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-c",
+          "description": "Concurrent users",
+          "variable": true,
+          "prompt_text": "Enter count:"
+        },
+        {
+          "flag": "-r",
+          "description": "Repetitions",
+          "variable": true,
+          "prompt_text": "Enter count:"
+        },
+        {
+          "flag": "-t",
+          "description": "Time",
+          "variable": true,
+          "prompt_text": "Enter time:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "url": {
+      "prompt": "Enter URL:",
+      "description": "Target URL"
+    }
+  }
+}

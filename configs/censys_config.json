@@ -1,0 +1,20 @@
+{
+  "name": "Censys",
+  "description": "Command-line tool for Censys.io",
+  "command": "censys",
+  "categories": {
+    "Commands": {
+      "options": [
+        {
+          "flag": "search",
+          "description": "Search Censys"
+        },
+        {
+          "flag": "view",
+          "description": "View host/cert"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

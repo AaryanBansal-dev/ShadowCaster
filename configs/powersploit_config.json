@@ -1,0 +1,24 @@
+{
+  "name": "PowerSploit",
+  "description": "PowerShell post-exploitation framework",
+  "command": "powershell",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-ExecutionPolicy",
+          "description": "Bypass",
+          "variable": true,
+          "prompt_text": "Enter Bypass:"
+        },
+        {
+          "flag": "-File",
+          "description": "Script file",
+          "variable": true,
+          "prompt_text": "Enter script:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

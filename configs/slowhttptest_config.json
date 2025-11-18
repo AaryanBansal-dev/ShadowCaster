@@ -1,0 +1,44 @@
+{
+  "name": "slowhttptest",
+  "description": "Application Layer DoS attack simulator",
+  "command": "slowhttptest",
+  "categories": {
+    "Attack Mode": {
+      "options": [
+        {
+          "flag": "-H",
+          "description": "SlowLoris mode"
+        },
+        {
+          "flag": "-B",
+          "description": "Slow message body"
+        },
+        {
+          "flag": "-R",
+          "description": "Range header"
+        },
+        {
+          "flag": "-X",
+          "description": "Slow read"
+        }
+      ]
+    },
+    "Options": {
+      "options": [
+        {
+          "flag": "-c",
+          "description": "Connections",
+          "variable": true,
+          "prompt_text": "Enter count:"
+        },
+        {
+          "flag": "-u",
+          "description": "URL",
+          "variable": true,
+          "prompt_text": "Enter URL:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

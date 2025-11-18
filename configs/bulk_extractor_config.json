@@ -1,0 +1,35 @@
+{
+  "name": "bulk_extractor",
+  "description": "Stream-based data extraction tool",
+  "command": "bulk_extractor",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-o",
+          "description": "Output directory",
+          "variable": true,
+          "prompt_text": "Enter directory:"
+        },
+        {
+          "flag": "-E",
+          "description": "Enable scanner",
+          "variable": true,
+          "prompt_text": "Enter scanner:"
+        },
+        {
+          "flag": "-x",
+          "description": "Disable scanner",
+          "variable": true,
+          "prompt_text": "Enter scanner:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "image": {
+      "prompt": "Enter image file:",
+      "description": "Image file"
+    }
+  }
+}

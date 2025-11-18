@@ -1,0 +1,36 @@
+{
+  "name": "swaks",
+  "description": "Swiss Army Knife for SMTP",
+  "command": "swaks",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "--to",
+          "description": "Recipient",
+          "variable": true,
+          "prompt_text": "Enter email:"
+        },
+        {
+          "flag": "--from",
+          "description": "Sender",
+          "variable": true,
+          "prompt_text": "Enter email:"
+        },
+        {
+          "flag": "--server",
+          "description": "SMTP server",
+          "variable": true,
+          "prompt_text": "Enter server:"
+        },
+        {
+          "flag": "--body",
+          "description": "Message body",
+          "variable": true,
+          "prompt_text": "Enter body:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

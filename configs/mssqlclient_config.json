@@ -1,0 +1,27 @@
+{
+  "name": "mssqlclient",
+  "description": "MS SQL client (Impacket)",
+  "command": "mssqlclient.py",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-db",
+          "description": "Database",
+          "variable": true,
+          "prompt_text": "Enter database:"
+        },
+        {
+          "flag": "-windows-auth",
+          "description": "Windows authentication"
+        }
+      ]
+    }
+  },
+  "required": {
+    "target": {
+      "prompt": "Enter target ([user]:[pass]@host):",
+      "description": "Target"
+    }
+  }
+}

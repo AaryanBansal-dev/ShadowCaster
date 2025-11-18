@@ -1,0 +1,28 @@
+{
+  "name": "smbclient",
+  "description": "FTP-like client to access SMB/CIFS shares",
+  "command": "smbclient",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-L",
+          "description": "List shares",
+          "variable": true,
+          "prompt_text": "Enter host:"
+        },
+        {
+          "flag": "-U",
+          "description": "Username",
+          "variable": true,
+          "prompt_text": "Enter username:"
+        },
+        {
+          "flag": "-N",
+          "description": "No password"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

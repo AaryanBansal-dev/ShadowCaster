@@ -1,0 +1,29 @@
+{
+  "name": "Grype",
+  "description": "Vulnerability scanner for container images and filesystems",
+  "command": "grype",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-o",
+          "description": "Output format",
+          "variable": true,
+          "prompt_text": "Enter format:"
+        },
+        {
+          "flag": "--fail-on",
+          "description": "Fail on severity",
+          "variable": true,
+          "prompt_text": "Enter severity:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "target": {
+      "prompt": "Enter target:",
+      "description": "Image or path"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Scalpel",
+  "description": "File carving and data recovery tool",
+  "command": "scalpel",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-c",
+          "description": "Config file",
+          "variable": true,
+          "prompt_text": "Enter config:"
+        },
+        {
+          "flag": "-o",
+          "description": "Output directory",
+          "variable": true,
+          "prompt_text": "Enter directory:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "file": {
+      "prompt": "Enter image file:",
+      "description": "Disk image file"
+    }
+  }
+}

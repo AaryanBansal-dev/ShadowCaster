@@ -1,0 +1,29 @@
+{
+  "name": "pdf-parser",
+  "description": "Parse PDF file structure",
+  "command": "pdf-parser.py",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-s",
+          "description": "Search string",
+          "variable": true,
+          "prompt_text": "Enter search term:"
+        },
+        {
+          "flag": "-o",
+          "description": "Object ID",
+          "variable": true,
+          "prompt_text": "Enter object ID:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "file": {
+      "prompt": "Enter PDF file:",
+      "description": "PDF file"
+    }
+  }
+}

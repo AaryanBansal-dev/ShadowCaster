@@ -1,0 +1,24 @@
+{
+  "name": "NoSQLMap",
+  "description": "NoSQL database exploitation tool",
+  "command": "nosqlmap",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "--url",
+          "description": "Target URL",
+          "variable": true,
+          "prompt_text": "Enter URL:"
+        },
+        {
+          "flag": "--attack",
+          "description": "Attack type",
+          "variable": true,
+          "prompt_text": "Enter attack:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

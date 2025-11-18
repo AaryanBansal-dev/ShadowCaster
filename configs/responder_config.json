@@ -1,0 +1,30 @@
+{
+  "name": "Responder",
+  "description": "LLMNR, NBT-NS and MDNS poisoner",
+  "command": "responder",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-I",
+          "description": "Interface",
+          "variable": true,
+          "prompt_text": "Enter interface:"
+        },
+        {
+          "flag": "-w",
+          "description": "WPAD proxy"
+        },
+        {
+          "flag": "-r",
+          "description": "Relay SMB/NTLM"
+        },
+        {
+          "flag": "-d",
+          "description": "Enable DHCP"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

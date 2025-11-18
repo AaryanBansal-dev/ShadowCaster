@@ -1,0 +1,20 @@
+{
+  "name": "LinPEAS",
+  "description": "Linux Privilege Escalation Awesome Script",
+  "command": "linpeas.sh",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-a",
+          "description": "All checks"
+        },
+        {
+          "flag": "-q",
+          "description": "Quiet mode"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

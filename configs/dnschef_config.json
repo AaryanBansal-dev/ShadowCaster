@@ -1,0 +1,30 @@
+{
+  "name": "DNSChef",
+  "description": "DNS proxy for penetration testers",
+  "command": "dnschef",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "--fakeip",
+          "description": "Fake IP",
+          "variable": true,
+          "prompt_text": "Enter IP:"
+        },
+        {
+          "flag": "--fakedomains",
+          "description": "Fake domains",
+          "variable": true,
+          "prompt_text": "Enter domains:"
+        },
+        {
+          "flag": "-i",
+          "description": "Interface",
+          "variable": true,
+          "prompt_text": "Enter interface:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

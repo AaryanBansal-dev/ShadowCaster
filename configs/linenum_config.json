@@ -1,0 +1,22 @@
+{
+  "name": "LinEnum",
+  "description": "Linux enumeration script",
+  "command": "linenum.sh",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-t",
+          "description": "Thorough tests"
+        },
+        {
+          "flag": "-r",
+          "description": "Report name",
+          "variable": true,
+          "prompt_text": "Enter report name:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

@@ -1,0 +1,28 @@
+{
+  "name": "dsniff",
+  "description": "Password sniffer",
+  "command": "dsniff",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-i",
+          "description": "Interface",
+          "variable": true,
+          "prompt_text": "Enter interface:"
+        },
+        {
+          "flag": "-n",
+          "description": "Don't resolve"
+        },
+        {
+          "flag": "-w",
+          "description": "Write to file",
+          "variable": true,
+          "prompt_text": "Enter file:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

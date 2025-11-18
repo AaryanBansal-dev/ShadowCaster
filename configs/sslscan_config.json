@@ -1,0 +1,31 @@
+{
+  "name": "sslscan",
+  "description": "SSL/TLS scanner",
+  "command": "sslscan",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "--no-failed",
+          "description": "Hide failed ciphers"
+        },
+        {
+          "flag": "--xml",
+          "description": "XML output",
+          "variable": true,
+          "prompt_text": "Enter file:"
+        },
+        {
+          "flag": "--show-certificate",
+          "description": "Show certificate"
+        }
+      ]
+    }
+  },
+  "required": {
+    "host": {
+      "prompt": "Enter host:port:",
+      "description": "Target host"
+    }
+  }
+}

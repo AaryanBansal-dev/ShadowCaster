@@ -1,0 +1,22 @@
+{
+  "name": "JoomScan",
+  "description": "Joomla vulnerability scanner",
+  "command": "joomscan",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-u",
+          "description": "URL",
+          "variable": true,
+          "prompt_text": "Enter URL:"
+        },
+        {
+          "flag": "-ec",
+          "description": "Enumerate components"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

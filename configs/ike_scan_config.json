@@ -1,0 +1,31 @@
+{
+  "name": "ike-scan",
+  "description": "IKE/IPsec scanner",
+  "command": "ike-scan",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-M",
+          "description": "Split mode"
+        },
+        {
+          "flag": "-A",
+          "description": "Aggressive mode"
+        },
+        {
+          "flag": "--trans",
+          "description": "Transform",
+          "variable": true,
+          "prompt_text": "Enter transform:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "target": {
+      "prompt": "Enter target:",
+      "description": "Target host/network"
+    }
+  }
+}

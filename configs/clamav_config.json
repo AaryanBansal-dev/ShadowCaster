@@ -1,0 +1,35 @@
+{
+  "name": "ClamAV",
+  "description": "Antivirus scanner",
+  "command": "clamscan",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-r",
+          "description": "Recursive scan"
+        },
+        {
+          "flag": "-i",
+          "description": "Only print infected files"
+        },
+        {
+          "flag": "--remove",
+          "description": "Remove infected files"
+        },
+        {
+          "flag": "-l",
+          "description": "Log file",
+          "variable": true,
+          "prompt_text": "Enter log file:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "path": {
+      "prompt": "Enter path to scan:",
+      "description": "Path"
+    }
+  }
+}

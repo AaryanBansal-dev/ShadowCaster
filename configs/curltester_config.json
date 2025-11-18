@@ -1,0 +1,43 @@
+{
+  "name": "curl",
+  "description": "Transfer data with URLs",
+  "command": "curl",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-X",
+          "description": "HTTP method",
+          "variable": true,
+          "prompt_text": "Enter method:"
+        },
+        {
+          "flag": "-H",
+          "description": "Header",
+          "variable": true,
+          "prompt_text": "Enter header:"
+        },
+        {
+          "flag": "-d",
+          "description": "Data",
+          "variable": true,
+          "prompt_text": "Enter data:"
+        },
+        {
+          "flag": "-k",
+          "description": "Insecure SSL"
+        },
+        {
+          "flag": "-v",
+          "description": "Verbose"
+        }
+      ]
+    }
+  },
+  "required": {
+    "url": {
+      "prompt": "Enter URL:",
+      "description": "Target URL"
+    }
+  }
+}

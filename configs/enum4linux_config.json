@@ -1,0 +1,33 @@
+{
+  "name": "enum4linux",
+  "description": "Enumerate information from Windows and Samba systems",
+  "command": "enum4linux",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-a",
+          "description": "All enumeration"
+        },
+        {
+          "flag": "-U",
+          "description": "User list"
+        },
+        {
+          "flag": "-S",
+          "description": "Share list"
+        },
+        {
+          "flag": "-G",
+          "description": "Group list"
+        }
+      ]
+    }
+  },
+  "required": {
+    "target": {
+      "prompt": "Enter target:",
+      "description": "Target host"
+    }
+  }
+}

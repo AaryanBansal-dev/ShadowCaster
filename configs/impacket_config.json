@@ -1,0 +1,28 @@
+{
+  "name": "Impacket",
+  "description": "Collection of Python classes for network protocols",
+  "command": "impacket",
+  "categories": {
+    "Tools": {
+      "options": [
+        {
+          "flag": "secretsdump",
+          "description": "Dump secrets"
+        },
+        {
+          "flag": "psexec",
+          "description": "PSExec"
+        },
+        {
+          "flag": "smbexec",
+          "description": "SMBExec"
+        },
+        {
+          "flag": "wmiexec",
+          "description": "WMIExec"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

@@ -1,0 +1,24 @@
+{
+  "name": "mongoaudit",
+  "description": "MongoDB auditing and security assessment tool",
+  "command": "mongoaudit",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-h",
+          "description": "Host",
+          "variable": true,
+          "prompt_text": "Enter host:"
+        },
+        {
+          "flag": "-p",
+          "description": "Port",
+          "variable": true,
+          "prompt_text": "Enter port:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

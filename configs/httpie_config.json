@@ -1,0 +1,35 @@
+{
+  "name": "HTTPie",
+  "description": "User-friendly HTTP client",
+  "command": "http",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "--json",
+          "description": "JSON data"
+        },
+        {
+          "flag": "--form",
+          "description": "Form data"
+        },
+        {
+          "flag": "-a",
+          "description": "Auth",
+          "variable": true,
+          "prompt_text": "Enter user:pass:"
+        },
+        {
+          "flag": "-v",
+          "description": "Verbose"
+        }
+      ]
+    }
+  },
+  "required": {
+    "url": {
+      "prompt": "Enter URL:",
+      "description": "Target URL"
+    }
+  }
+}

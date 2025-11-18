@@ -1,0 +1,44 @@
+{
+  "name": "Volatility",
+  "description": "Memory forensics framework",
+  "command": "volatility",
+  "categories": {
+    "Profile": {
+      "options": [
+        {
+          "flag": "--profile",
+          "description": "OS profile",
+          "variable": true,
+          "prompt_text": "Enter profile:"
+        },
+        {
+          "flag": "-f",
+          "description": "Memory dump file",
+          "variable": true,
+          "prompt_text": "Enter file:"
+        }
+      ]
+    },
+    "Plugin": {
+      "options": [
+        {
+          "flag": "pslist",
+          "description": "List processes"
+        },
+        {
+          "flag": "pstree",
+          "description": "Process tree"
+        },
+        {
+          "flag": "netscan",
+          "description": "Network connections"
+        },
+        {
+          "flag": "malfind",
+          "description": "Find malware"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

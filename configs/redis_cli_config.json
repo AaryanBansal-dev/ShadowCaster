@@ -1,0 +1,30 @@
+{
+  "name": "redis-cli",
+  "description": "Redis command line interface",
+  "command": "redis-cli",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-h",
+          "description": "Server",
+          "variable": true,
+          "prompt_text": "Enter server:"
+        },
+        {
+          "flag": "-p",
+          "description": "Port",
+          "variable": true,
+          "prompt_text": "Enter port:"
+        },
+        {
+          "flag": "-a",
+          "description": "Password",
+          "variable": true,
+          "prompt_text": "Enter password:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

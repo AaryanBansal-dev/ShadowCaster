@@ -1,0 +1,36 @@
+{
+  "name": "dd",
+  "description": "Convert and copy files/disks",
+  "command": "dd",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "if",
+          "description": "Input file",
+          "variable": true,
+          "prompt_text": "Enter input:"
+        },
+        {
+          "flag": "of",
+          "description": "Output file",
+          "variable": true,
+          "prompt_text": "Enter output:"
+        },
+        {
+          "flag": "bs",
+          "description": "Block size",
+          "variable": true,
+          "prompt_text": "Enter block size:"
+        },
+        {
+          "flag": "count",
+          "description": "Block count",
+          "variable": true,
+          "prompt_text": "Enter count:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

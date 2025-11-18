@@ -1,0 +1,22 @@
+{
+  "name": "Acunetix",
+  "description": "Web vulnerability scanner",
+  "command": "acunetix",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "/scan",
+          "description": "Start scan"
+        },
+        {
+          "flag": "/target",
+          "description": "Target URL",
+          "variable": true,
+          "prompt_text": "Enter URL:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

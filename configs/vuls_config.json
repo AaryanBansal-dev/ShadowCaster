@@ -1,0 +1,24 @@
+{
+  "name": "Vuls",
+  "description": "Vulnerability scanner for Linux/FreeBSD",
+  "command": "vuls",
+  "categories": {
+    "Commands": {
+      "options": [
+        {
+          "flag": "scan",
+          "description": "Scan for vulnerabilities"
+        },
+        {
+          "flag": "report",
+          "description": "Generate report"
+        },
+        {
+          "flag": "tui",
+          "description": "Terminal UI"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

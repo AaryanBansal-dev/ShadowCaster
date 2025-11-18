@@ -1,0 +1,22 @@
+{
+  "name": "urlsnarf",
+  "description": "Output URLs sniffed from HTTP traffic",
+  "command": "urlsnarf",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-i",
+          "description": "Interface",
+          "variable": true,
+          "prompt_text": "Enter interface:"
+        },
+        {
+          "flag": "-n",
+          "description": "Don't resolve hostnames"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

@@ -1,0 +1,30 @@
+{
+  "name": "ptunnel",
+  "description": "ICMP tunnel tool",
+  "command": "ptunnel",
+  "categories": {
+    "Mode": {
+      "options": [
+        {
+          "flag": "-p",
+          "description": "Proxy mode",
+          "variable": true,
+          "prompt_text": "Enter proxy:"
+        },
+        {
+          "flag": "-lp",
+          "description": "Listen port",
+          "variable": true,
+          "prompt_text": "Enter port:"
+        },
+        {
+          "flag": "-da",
+          "description": "Dest address",
+          "variable": true,
+          "prompt_text": "Enter address:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

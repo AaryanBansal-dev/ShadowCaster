@@ -1,0 +1,33 @@
+{
+  "name": "rpcclient",
+  "description": "Tool for executing client side MS-RPC functions",
+  "command": "rpcclient",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-U",
+          "description": "Username",
+          "variable": true,
+          "prompt_text": "Enter username:"
+        },
+        {
+          "flag": "-c",
+          "description": "Command",
+          "variable": true,
+          "prompt_text": "Enter command:"
+        },
+        {
+          "flag": "-N",
+          "description": "No password"
+        }
+      ]
+    }
+  },
+  "required": {
+    "target": {
+      "prompt": "Enter target:",
+      "description": "Target host"
+    }
+  }
+}

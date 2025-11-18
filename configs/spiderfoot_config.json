@@ -1,0 +1,30 @@
+{
+  "name": "SpiderFoot",
+  "description": "Automated OSINT reconnaissance tool",
+  "command": "spiderfoot",
+  "categories": {
+    "Scan": {
+      "options": [
+        {
+          "flag": "-s",
+          "description": "Target",
+          "variable": true,
+          "prompt_text": "Enter target:"
+        },
+        {
+          "flag": "-t",
+          "description": "Scan type",
+          "variable": true,
+          "prompt_text": "Enter type:"
+        },
+        {
+          "flag": "-m",
+          "description": "Module list",
+          "variable": true,
+          "prompt_text": "Enter modules:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

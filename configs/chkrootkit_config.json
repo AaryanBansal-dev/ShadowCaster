@@ -1,0 +1,26 @@
+{
+  "name": "chkrootkit",
+  "description": "Check for rootkits",
+  "command": "chkrootkit",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-q",
+          "description": "Quiet mode"
+        },
+        {
+          "flag": "-x",
+          "description": "Expert mode"
+        },
+        {
+          "flag": "-r",
+          "description": "Root directory",
+          "variable": true,
+          "prompt_text": "Enter directory:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

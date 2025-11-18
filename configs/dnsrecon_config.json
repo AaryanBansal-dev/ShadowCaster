@@ -1,0 +1,30 @@
+{
+  "name": "DNSRecon",
+  "description": "DNS enumeration and scanning tool",
+  "command": "dnsrecon",
+  "categories": {
+    "Scan Type": {
+      "options": [
+        {
+          "flag": "-t",
+          "description": "Type (std,rvl,brt,srv,axfr)",
+          "variable": true,
+          "prompt_text": "Enter type:"
+        },
+        {
+          "flag": "-d",
+          "description": "Domain",
+          "variable": true,
+          "prompt_text": "Enter domain:"
+        },
+        {
+          "flag": "-D",
+          "description": "Dictionary file",
+          "variable": true,
+          "prompt_text": "Enter wordlist:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

@@ -46,8 +46,9 @@ class TestShadowCaster:
         self.print_test_header("Configuration Loading")
         
         tools = self.loader.list_available_tools()
-        self.assert_true(len(tools) == 6, f"Found all 6 tools ({len(tools)} found)")
+        self.assert_true(len(tools) >= 100, f"Found 100+ tools ({len(tools)} found)")
         
+        # Test that original 6 tools are still present
         expected_tools = ['nmap', 'hydra', 'sqlmap', 'wpscan', 'gobuster', 'aircrack']
         tool_ids = [t['id'] for t in tools]
         

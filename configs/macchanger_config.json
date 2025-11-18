@@ -1,0 +1,31 @@
+{
+  "name": "macchanger",
+  "description": "Change MAC address",
+  "command": "macchanger",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-r",
+          "description": "Random MAC"
+        },
+        {
+          "flag": "-m",
+          "description": "Set MAC",
+          "variable": true,
+          "prompt_text": "Enter MAC:"
+        },
+        {
+          "flag": "-s",
+          "description": "Show current MAC"
+        }
+      ]
+    }
+  },
+  "required": {
+    "interface": {
+      "prompt": "Enter interface:",
+      "description": "Network interface"
+    }
+  }
+}

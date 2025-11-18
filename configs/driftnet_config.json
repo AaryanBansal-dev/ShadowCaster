@@ -1,0 +1,24 @@
+{
+  "name": "Driftnet",
+  "description": "Captures images from network traffic",
+  "command": "driftnet",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-i",
+          "description": "Interface",
+          "variable": true,
+          "prompt_text": "Enter interface:"
+        },
+        {
+          "flag": "-d",
+          "description": "Output directory",
+          "variable": true,
+          "prompt_text": "Enter directory:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

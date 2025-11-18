@@ -1,0 +1,45 @@
+{
+  "name": "Trivy",
+  "description": "Vulnerability scanner for containers and other artifacts",
+  "command": "trivy",
+  "categories": {
+    "Target Type": {
+      "options": [
+        {
+          "flag": "image",
+          "description": "Scan container image"
+        },
+        {
+          "flag": "fs",
+          "description": "Scan filesystem"
+        },
+        {
+          "flag": "repo",
+          "description": "Scan repository"
+        }
+      ]
+    },
+    "Options": {
+      "options": [
+        {
+          "flag": "--severity",
+          "description": "Severity filter",
+          "variable": true,
+          "prompt_text": "Enter severity:"
+        },
+        {
+          "flag": "--format",
+          "description": "Output format",
+          "variable": true,
+          "prompt_text": "Enter format:"
+        }
+      ]
+    }
+  },
+  "required": {
+    "target": {
+      "prompt": "Enter target:",
+      "description": "Target to scan"
+    }
+  }
+}

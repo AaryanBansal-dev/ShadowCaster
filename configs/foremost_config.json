@@ -1,0 +1,30 @@
+{
+  "name": "Foremost",
+  "description": "File carving tool",
+  "command": "foremost",
+  "categories": {
+    "Options": {
+      "options": [
+        {
+          "flag": "-t",
+          "description": "File types (jpg,pdf,exe)",
+          "variable": true,
+          "prompt_text": "Enter types:"
+        },
+        {
+          "flag": "-i",
+          "description": "Input file",
+          "variable": true,
+          "prompt_text": "Enter input:"
+        },
+        {
+          "flag": "-o",
+          "description": "Output directory",
+          "variable": true,
+          "prompt_text": "Enter output:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

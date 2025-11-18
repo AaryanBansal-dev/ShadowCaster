@@ -1,0 +1,28 @@
+{
+  "name": "droopescan",
+  "description": "CMS scanner (Drupal, Joomla, etc.)",
+  "command": "droopescan",
+  "categories": {
+    "Scan": {
+      "options": [
+        {
+          "flag": "scan",
+          "description": "Scan mode"
+        },
+        {
+          "flag": "-u",
+          "description": "URL",
+          "variable": true,
+          "prompt_text": "Enter URL:"
+        },
+        {
+          "flag": "-e",
+          "description": "Enumerate",
+          "variable": true,
+          "prompt_text": "Enter type:"
+        }
+      ]
+    }
+  },
+  "required": {}
+}

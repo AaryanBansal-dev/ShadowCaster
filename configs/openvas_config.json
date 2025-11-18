@@ -1,0 +1,24 @@
+{
+  "name": "OpenVAS",
+  "description": "Open Vulnerability Assessment System",
+  "command": "openvas",
+  "categories": {
+    "Commands": {
+      "options": [
+        {
+          "flag": "start",
+          "description": "Start OpenVAS"
+        },
+        {
+          "flag": "stop",
+          "description": "Stop OpenVAS"
+        },
+        {
+          "flag": "status",
+          "description": "Check status"
+        }
+      ]
+    }
+  },
+  "required": {}
+}
